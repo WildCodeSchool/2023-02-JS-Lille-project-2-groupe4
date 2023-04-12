@@ -5,7 +5,7 @@ import Weather from "./weather/Weather";
 import defaultLaunch from "../../data/defaultLaunch.json";
 
 function NextLaunchContainer() {
-  const [launchIndex] = useState(0);
+  const [launchIndex] = useState(1);
 
   const convertedDate = new Date(defaultLaunch[launchIndex].net).getTime();
 
