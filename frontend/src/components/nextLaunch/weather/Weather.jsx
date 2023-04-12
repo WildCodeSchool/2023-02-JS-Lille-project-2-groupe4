@@ -1,35 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
+import PropTypes from "prop-types";
 
-function Weather() {
+function Weather({ lat, lon }) {
   const [data, setData] = useState({});
-  const [location, setLocation] = useState("");
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=8c8b2017a4e7fe9a3472175bec3b0b99`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=8c8b2017a4e7fe9a3472175bec3b0b99`;
 
-  const searchLocation = (event) => {
-    if (event.key === "Enter") {
-      axios.get(url).then((response) => {
-        setData(response.data);
-      });
-    }
-  };
+  useEffect(() => {
+    axios.get(url).then((response) => {
+      setData(response.data);
+    });
+  }, []);
 
   return (
     <div className="App">
-      <div className="search">
-        <input
-          value={location}
-          onChange={(event) => setLocation(event.target.value)}
-          onKeyPress={searchLocation}
-          placeholder="Enter a location"
-          type="text"
-        />
-      </div>
       <div className="container">
         <div className="top">
           <div className="location">
-            <p>{data.name}</p>
+            <h1>{data.name}</h1>
           </div>
           <div className="temp">
             {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}
@@ -40,10 +29,10 @@ function Weather() {
         </div>
         <div className="bottom">
           <div className="feels">
-            <p>12° C</p>
+            {data.main ? <p>{data.main.feels_like.toFixed()}°C</p> : null}
           </div>
           <div className="humidity">
-            <p>45%</p>
+            {data.main ? <p>{data.main.humidity}%</p> : null}
           </div>
           <div className="wind">
             {data.wind ? <p>{(data.wind.speed * 3.6).toFixed()} km/h</p> : null}
@@ -53,5 +42,10 @@ function Weather() {
     </div>
   );
 }
+
+Weather.propTypes = {
+  lat: PropTypes.number.isRequired,
+  lon: PropTypes.number.isRequired,
+};
 
 export default Weather;
