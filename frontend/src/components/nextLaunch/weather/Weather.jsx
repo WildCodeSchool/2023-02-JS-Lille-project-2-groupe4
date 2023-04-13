@@ -11,7 +11,7 @@ function Weather({ lat, lon }) {
     axios.get(url).then((response) => {
       setData(response.data);
     });
-  }, []);
+  }, [lat, lon]);
 
   return (
     <div className="App">
@@ -44,8 +44,8 @@ function Weather({ lat, lon }) {
 }
 
 Weather.propTypes = {
-  lat: PropTypes.number.isRequired,
-  lon: PropTypes.number.isRequired,
+  lat: PropTypes.string.isRequired,
+  lon: PropTypes.string.isRequired,
 };
 
 export default Weather;

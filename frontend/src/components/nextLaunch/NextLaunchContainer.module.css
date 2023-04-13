@@ -1,5 +1,15 @@
 .nextLaunchContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.previousButton {
+.buttonContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  margin-top: 20px;
+  padding: 5px 15px;
 }
