@@ -1,19 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import styles from "./NextLaunchContainer.module.css";
 import CountdownTimer from "./countdownTimer/CountdownTimer";
 import Weather from "./weather/Weather";
-import defaultLaunch from "../../data/defaultLaunch.json";
 
 function NextLaunchContainer() {
-  const [launcherIndex, setLauncherIndex] = useState(0);
+  const url = `https://ll.thespacedevs.com/2.2.0/launch/upcoming/`;
 
-  const convertedDate = new Date(defaultLaunch[launcherIndex].net).getTime();
-  const latitudeToDisplay = defaultLaunch[launcherIndex].pad.latitude;
-  const longitudeToDisplay = defaultLaunch[launcherIndex].pad.longitude;
+  const [launcherIndex, setLauncherIndex] = useState(0);
+  const [data, setData] = useState({});
+
+  useEffect(() => {
+    axios
+      .get(url, {
+        headers: {
+          Authorization: "Token 87af67c54abc7fe84a7e97b181686474262f3da5",
+        },
+      })
+      .then((response) => {
+        setData(response.data);
+      });
+  }, []);
 
   const nextLaunch = () => {
     setLauncherIndex(
-      launcherIndex === defaultLaunch.length - 1
+      launcherIndex === data.results.length - 1
         ? 0
         : (prevIndex) => prevIndex + 1
     );
@@ -22,17 +33,19 @@ function NextLaunchContainer() {
   const prevLaunch = () => {
     setLauncherIndex(
       launcherIndex === 0
-        ? defaultLaunch.length - 1
+        ? data.results.length - 1
         : (prevIndex) => prevIndex - 1
     );
   };
 
   return (
     <div className={styles.nextLaunchContainer}>
-      <CountdownTimer countdownTimestampMs={convertedDate} />
-
-      <Weather lat={latitudeToDisplay} lon={longitudeToDisplay} />
-
+      {data.results ? (
+        <Weather dataLauncher={data} launcherIndex={launcherIndex} />
+      ) : null}
+      {data.results ? (
+        <CountdownTimer data={data} launcherIndex={launcherIndex} />
+      ) : null}
       <div className={styles.buttonContainer}>
         <button
           type="button"

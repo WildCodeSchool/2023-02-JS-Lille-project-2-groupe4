@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import PropTypes from "prop-types";
 
-function Weather({ lat, lon }) {
+function Weather({ dataLauncher, launcherIndex }) {
   const [data, setData] = useState({});
+  const lat = dataLauncher.results[launcherIndex].pad.latitude;
+  const lon = dataLauncher.results[launcherIndex].pad.longitude;
 
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=8c8b2017a4e7fe9a3472175bec3b0b99`;
 
@@ -44,8 +46,8 @@ function Weather({ lat, lon }) {
 }
 
 Weather.propTypes = {
-  lat: PropTypes.string.isRequired,
-  lon: PropTypes.string.isRequired,
+  dataLauncher: PropTypes.InstanceOf(Array).isRequired,
+  launcherIndex: PropTypes.number.isRequired,
 };
 
 export default Weather;

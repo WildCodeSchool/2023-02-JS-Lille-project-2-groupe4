@@ -10,8 +10,12 @@ const defaultRemainingTime = {
   days: "00",
 };
 
-function CountdownTimer({ countdownTimestampMs }) {
+function CountdownTimer({ data, launcherIndex }) {
   const [remainingTime, setRemainingTime] = useState(defaultRemainingTime);
+
+  const countdownTimestampMs = new Date(
+    data.results[launcherIndex].net
+  ).getTime();
 
   function updateRemainingTime(countdown) {
     setRemainingTime(getRemainingTimeUntilMsTimestamp(countdown));
@@ -39,7 +43,8 @@ function CountdownTimer({ countdownTimestampMs }) {
 }
 
 CountdownTimer.propTypes = {
-  countdownTimestampMs: PropTypes.number.isRequired,
+  data: PropTypes.InstanceOf(Array).isRequired,
+  launcherIndex: PropTypes.number.isRequired,
 };
 
 export default CountdownTimer;
