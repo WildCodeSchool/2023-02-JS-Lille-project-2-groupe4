@@ -31,19 +31,19 @@ function CountdownTimer({ data, launcherIndex }) {
   return (
     <div className={styles.countdownTimer}>
       <span>{remainingTime.days}</span>
-      <span>days</span>
+      <span>Days</span>
       <span className={styles.twoNumbers}>{remainingTime.hours}</span>
-      <span>hours</span>
+      <span>Dours</span>
       <span className={styles.twoNumbers}>{remainingTime.minutes}</span>
-      <span>minutes</span>
+      <span>Mins</span>
       <span className={styles.twoNumbers}>{remainingTime.seconds}</span>
-      <span>seconds</span>
+      <span>Secs</span>
     </div>
   );
 }
 
 CountdownTimer.propTypes = {
-  data: PropTypes.InstanceOf(Array).isRequired,
+  data: PropTypes.oneOfType([PropTypes.object]).isRequired,
   launcherIndex: PropTypes.number.isRequired,
 };
 

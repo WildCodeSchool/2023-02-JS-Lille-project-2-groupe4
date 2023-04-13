@@ -1,14 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
 .countdownTimer {
-  width: 600px;
+  max-width: 80%;
   height: 100px;
-  border: 2px solid black;
+
+  border-radius: 20px;
+  padding: 0 10px;
   font-family: "Oswald", sans-serif;
+  color: rgba(255, 255, 255, 0.859);
   font-size: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #20192b;
 }
 
 .countdownTimer span {
