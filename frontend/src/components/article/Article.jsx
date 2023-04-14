@@ -12,25 +12,16 @@ function Article() {
 
   return newArticle?.results.map(
     (article, index) =>
-      index < 5 && (
+      index < 3 && (
         <ArticleCard
           key={article.id}
           title={article.title}
           url={article.url}
-          image_url={article.image_url}
+          imageUrl={article.image_url}
           summary={article.summary}
         />
       )
   );
 }
-
-Article.propTypes = {
-  article: PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    imgage_url: PropTypes.string,
-    summary: PropTypes.string,
-    url: PropTypes.string,
-  }).isRequired,
-};
 
 export default Article;
