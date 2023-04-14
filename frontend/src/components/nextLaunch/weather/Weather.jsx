@@ -18,28 +18,44 @@ function Weather({ dataLauncher, launcherIndex }) {
 
   return (
     <div className={styles.weatherContainer}>
-      <div>
-        <div>
-          <h1 className={styles.city}>{data.name}</h1>
+      <div className={styles.topCard}>
+        <div className={styles.cityContainer}>
+          <h1 className={styles.mainText}>{data.name}</h1>
+          <p className={styles.textDescription}>City</p>
         </div>
-        <div className={styles.temp}>
-          {data.main ? (
-            <h1 className={styles.tempText}>{data.main.temp.toFixed()}°C</h1>
-          ) : null}
-        </div>
-        <div className="description">
-          {data.weather ? <p>{data.weather[0].main}</p> : null}
+        <div className={styles.countryContainer}>
+          <div className={styles.containerRight}>
+            {data.sys ? (
+              <h1 className={styles.mainText}>{data.sys.country}</h1>
+            ) : null}
+          </div>
+
+          <p className={styles.textDescription}>Country</p>
         </div>
       </div>
-      <div className="bottom">
-        <div className="feels">
-          {data.main ? <p>{data.main.feels_like.toFixed()}°C</p> : null}
+      <div className={styles.bottomCard}>
+        <div className={styles.tempContainer}>
+          <p className={styles.textDescription}>Temp</p>
+          {data.main ? (
+            <h1 className={styles.mainText}>{data.main.temp.toFixed()}°C</h1>
+          ) : null}
         </div>
-        <div className="humidity">
-          {data.main ? <p>{data.main.humidity}%</p> : null}
+        <div className={styles.windContainer}>
+          <p className={styles.textDescription}>Weather</p>
+          {data.weather ? (
+            <h1 className={styles.mainText}>{data.weather[0].main}</h1>
+          ) : null}
         </div>
-        <div className="wind">
-          {data.wind ? <p>{(data.wind.speed * 3.6).toFixed()} km/h</p> : null}
+        <div className={styles.windContainer}>
+          <div className={styles.containerRight}>
+            <p className={styles.textDescription}>Wind</p>
+          </div>
+
+          {data.wind ? (
+            <h1 className={styles.mainText}>
+              {(data.wind.speed * 3.6).toFixed()}km/h
+            </h1>
+          ) : null}
         </div>
       </div>
     </div>

@@ -38,28 +38,80 @@ function NextLaunchContainer() {
     );
   };
 
+  /* console.log(data); */
+
   return (
     <div className={styles.nextLaunchContainer}>
-      {data.results ? (
-        <Weather dataLauncher={data} launcherIndex={launcherIndex} />
-      ) : null}
-      {data.results ? (
-        <CountdownTimer data={data} launcherIndex={launcherIndex} />
-      ) : null}
-      <div className={styles.buttonContainer}>
+      <div className={styles.leftButtonContainer}>
         <button
           type="button"
           className={styles.button}
           onClick={() => prevLaunch()}
         >
-          Prev
+          &lt;
         </button>
+      </div>
+      <div className={styles.leftContainer}>
+        <div className={styles.launcherImageContainer}>
+          {data.results ? (
+            <img
+              className={styles.launcherImage}
+              src={data.results[launcherIndex].image}
+              alt="launcher"
+            />
+          ) : null}
+        </div>
+        {data.results ? (
+          <CountdownTimer data={data} launcherIndex={launcherIndex} />
+        ) : null}
+      </div>
+
+      <div className={styles.rightContainer}>
+        {data.results ? (
+          <Weather dataLauncher={data} launcherIndex={launcherIndex} />
+        ) : null}
+        <div className={styles.descriptionContainer}>
+          <div className={styles.missionContainer}>
+            <p className={styles.titleDescription}>Mission Name</p>
+            {data.results ? (
+              <h1 className={styles.missionName}>
+                {data.results[launcherIndex].mission.name}
+              </h1>
+            ) : null}
+          </div>
+          <div className={styles.rocketContainer}>
+            <p className={styles.titleDescription}>Rocket</p>
+            {data.results ? (
+              <h1 className={styles.missionName}>
+                {data.results[launcherIndex].rocket.configuration.name}
+              </h1>
+            ) : null}
+          </div>
+          <div className={styles.padContainer}>
+            <p className={styles.titleDescription}>Pad</p>
+            {data.results ? (
+              <h1 className={styles.missionName}>
+                {data.results[launcherIndex].pad.name}
+              </h1>
+            ) : null}
+          </div>
+          <div className={styles.providerContainer}>
+            <p className={styles.titleDescription}>Service Provider</p>
+            {data.results ? (
+              <h1 className={styles.missionName}>
+                {data.results[launcherIndex].launch_service_provider.name}
+              </h1>
+            ) : null}
+          </div>
+        </div>
+      </div>
+      <div className={styles.rightButtonContainer}>
         <button
           type="button"
           className={styles.button}
           onClick={() => nextLaunch()}
         >
-          Next
+          &gt;
         </button>
       </div>
     </div>

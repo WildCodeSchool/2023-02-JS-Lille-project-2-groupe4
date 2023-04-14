@@ -30,14 +30,22 @@ function CountdownTimer({ data, launcherIndex }) {
 
   return (
     <div className={styles.countdownTimer}>
-      <span>{remainingTime.days}</span>
-      <span>Days</span>
-      <span className={styles.twoNumbers}>{remainingTime.hours}</span>
-      <span>Dours</span>
-      <span className={styles.twoNumbers}>{remainingTime.minutes}</span>
-      <span>Mins</span>
-      <span className={styles.twoNumbers}>{remainingTime.seconds}</span>
-      <span>Secs</span>
+      <div className={styles.datasContainer}>
+        <span className={styles.time}>{remainingTime.days}</span>
+        <span className={styles.units}>Days</span>
+      </div>
+      <div className={styles.datasContainer}>
+        <span className={styles.twoNumbers}>{remainingTime.hours}</span>
+        <span className={styles.units}>Hours</span>
+      </div>
+      <div className={styles.datasContainer}>
+        <span className={styles.twoNumbers}>{remainingTime.minutes}</span>
+        <span className={styles.units}>Mins</span>
+      </div>
+      <div className={styles.datasContainer}>
+        <span className={styles.twoNumbers}>{remainingTime.seconds}</span>
+        <span className={styles.units}>Secs</span>
+      </div>
     </div>
   );
 }
