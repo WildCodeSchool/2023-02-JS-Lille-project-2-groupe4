@@ -13,7 +13,7 @@ export default function SpacecraftCard({ imgSrc, name, inUse, description }) {
       <div className="info-container">
         <div className="info-header">
           <h3>{name}</h3>
-          <h4>{inUse}</h4>
+          <h4>{inUse ? "active" : "in-active"}</h4>
         </div>
         <div className="info-body">
           <p>{description}</p>
@@ -26,6 +26,6 @@ export default function SpacecraftCard({ imgSrc, name, inUse, description }) {
 SpacecraftCard.propTypes = {
   imgSrc: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  inUse: PropTypes.string.isRequired,
+  inUse: PropTypes.bool.isRequired,
   description: PropTypes.string.isRequired,
 };
