@@ -3,16 +3,24 @@ import axios from "axios";
 import SpacecraftCard from "./SpacecraftCard";
 
 export default function SpacecraftComponent() {
-  const [spacecraft, setSpacecraft] = useState();
+  const url = `https://ll.thespacedevs.com/2.2.0/spacecraft/`;
+
+  const [spacecraftData, setSpacecraftData] = useState();
   useEffect(() => {
     axios
-      .get("https://ll.thespacedevs.com/2.2.0/spacecraft/")
-      .then((response) => setSpacecraft(response.data));
+      .get(url, {
+        headers: {
+          Authorization: "Token 87af67c54abc7fe84a7e97b181686474262f3da5",
+        },
+      })
+      .then((response) => {
+        setSpacecraftData(response.data);
+      });
   }, []);
 
-  return spacecraft?.results.map(
+  return spacecraftData?.results.map(
     (scraft, index) =>
-      index < 2 && (
+      index < 1 && (
         <SpacecraftCard
           key={scraft.id}
           imgSrc={scraft.spacecraft_config.image_url}
