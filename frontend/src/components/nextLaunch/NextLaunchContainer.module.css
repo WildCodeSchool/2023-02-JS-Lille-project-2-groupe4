@@ -81,21 +81,11 @@
 }
 
 .button {
-  margin-top: 20px;
-  padding: 5px 15px;
-  margin-bottom: 15px;
-  background: none;
-  border: none;
-  font-size: 20px;
-  font-family: "Oswald", sans-serif;
-  color: rgb(190, 180, 180);
+  font-size: 50px;
+  color: rgba(190, 180, 180, 0.452);
   cursor: pointer;
 }
 
-.button {
-  padding: 0;
-  margin: 0;
-  height: 20px;
-  font-size: 40px;
-  opacity: 50%;
+.button:active {
+  color: white;
 }

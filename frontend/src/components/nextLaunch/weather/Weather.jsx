@@ -40,7 +40,7 @@ function Weather({ dataLauncher, launcherIndex }) {
             <h1 className={styles.mainText}>{data.main.temp.toFixed()}°C</h1>
           ) : null}
         </div>
-        <div className={styles.windContainer}>
+        <div className={styles.middleContainer}>
           <p className={styles.textDescription}>Weather</p>
           {data.weather ? (
             <h1 className={styles.mainText}>{data.weather[0].main}</h1>

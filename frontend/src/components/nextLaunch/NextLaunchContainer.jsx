@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 import styles from "./NextLaunchContainer.module.css";
 import CountdownTimer from "./countdownTimer/CountdownTimer";
 import Weather from "./weather/Weather";
@@ -43,13 +44,7 @@ function NextLaunchContainer() {
   return (
     <div className={styles.nextLaunchContainer}>
       <div className={styles.leftButtonContainer}>
-        <button
-          type="button"
-          className={styles.button}
-          onClick={() => prevLaunch()}
-        >
-          &lt;
-        </button>
+        <FaAngleLeft className={styles.button} onClick={() => prevLaunch()} />
       </div>
       <div className={styles.leftContainer}>
         <div className={styles.launcherImageContainer}>
@@ -106,13 +101,7 @@ function NextLaunchContainer() {
         </div>
       </div>
       <div className={styles.rightButtonContainer}>
-        <button
-          type="button"
-          className={styles.button}
-          onClick={() => nextLaunch()}
-        >
-          &gt;
-        </button>
+        <FaAngleRight className={styles.button} onClick={() => nextLaunch()} />
       </div>
     </div>
   );

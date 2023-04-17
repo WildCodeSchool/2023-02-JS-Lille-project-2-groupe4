@@ -46,6 +46,12 @@
   margin: 0;
 }
 
+.middleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .windContainer {
   align-items: end;
 }
