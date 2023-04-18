@@ -6,8 +6,8 @@ import Agencies from "./pages/Agencies";
 function App() {
   return (
     <div className={styles.app}>
-      <Home />
-      {/* <Agencies /> */}
+      {/* <Home /> */}
+      <Agencies />
     </div>
   );
 }
