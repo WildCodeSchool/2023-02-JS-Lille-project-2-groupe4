@@ -13,16 +13,16 @@
   justify-content: center;
 }
 
-.artTitle{
+.artTitle {
   font-weight: bolder;
   font-size: x-large;
 }
 
-  .artImg{
-    max-width: 40%;
-    max-height: 40%;
-  }
+.artImg {
+  max-width: 40%;
+  max-height: 40%;
+}
 
-  p{
-    font-style: oblique;
-  }
+p {
+  font-style: oblique;
+}

@@ -1,6 +1,5 @@
 import React from "react";
 import Article from "./components/article/Article";
-
 import "./App.css";
 
 function App() {
