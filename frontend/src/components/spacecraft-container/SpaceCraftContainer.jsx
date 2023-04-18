@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import SpacecraftCard from "./SpacecraftCard";
+import SpacecraftCard from "./spacecraft-card/SpacecraftCard";
 
-export default function SpacecraftComponent() {
+export default function SpaceCraftContainer() {
   const url = `https://ll.thespacedevs.com/2.2.0/spacecraft/`;
 
   const [spacecraftData, setSpacecraftData] = useState();
@@ -19,14 +19,14 @@ export default function SpacecraftComponent() {
   }, []);
 
   return spacecraftData?.results.map(
-    (scraft, index) =>
-      index < 1 && (
+    (craft, index) =>
+      index < 2 && (
         <SpacecraftCard
-          key={scraft.id}
-          imgSrc={scraft.spacecraft_config.image_url}
-          name={scraft.name}
-          inUse={scraft.spacecraft_config.in_use}
-          description={scraft.description}
+          key={craft.id}
+          imgSrc={craft.spacecraft_config.image_url}
+          name={craft.name}
+          inUse={craft.spacecraft_config.in_use}
+          description={craft.description}
         />
       )
   );
