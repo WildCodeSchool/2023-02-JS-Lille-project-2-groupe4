@@ -1,13 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./ArticleCard.css";
 
 function ArticleCard({ title, summary, imageUrl, url }) {
   return (
-    <div className="ArticleCard">
-      <h3>{title}</h3>
-      <h4>{summary}</h4>
-      <img src={imageUrl} alt="rapport avec l'article" />
-      <p>{url}</p>
+    <div className="articleCard">
+      <h3 className="artTitle">{title}</h3>
+      <h4 className="artSum">{summary}</h4>
+      <img className="artImg" src={imageUrl} alt="rapport avec l'article" />
+      <p className="artUrl">{url}</p>
     </div>
   );
 }

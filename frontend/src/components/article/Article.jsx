@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ArticleCard from "../articleCard/ArticleCard";
+import "./Article.css";
 
 function Article() {
   const [newArticle, setNewArticle] = useState();
