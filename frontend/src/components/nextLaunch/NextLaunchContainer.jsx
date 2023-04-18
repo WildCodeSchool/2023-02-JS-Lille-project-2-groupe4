@@ -15,7 +15,7 @@ function NextLaunchContainer() {
     axios
       .get(url, {
         headers: {
-          Authorization: "Token 87af67c54abc7fe84a7e97b181686474262f3da5",
+          Authorization: import.meta.env.TOKEN,
         },
       })
       .then((response) => {
@@ -38,8 +38,6 @@ function NextLaunchContainer() {
         : (prevIndex) => prevIndex - 1
     );
   };
-
-  /* console.log(data); */
 
   return (
     <div className={styles.nextLaunchContainer}>

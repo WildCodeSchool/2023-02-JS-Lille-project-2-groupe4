@@ -1,0 +1,19 @@
+.agenciesContainer {
+  background-image: url(../assets/space-BG1.png);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  font-size: 50px;
+  background-color: rgba(0, 0, 0, 0.535);
+  cursor: pointer;
+}
+
+.button:active {
+  color: white;
+}
