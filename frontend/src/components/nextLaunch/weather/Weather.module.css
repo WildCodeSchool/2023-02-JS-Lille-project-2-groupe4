@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+
+.weatherContainer {
+  max-width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  color: rgba(255, 255, 255, 0.859);
+  background-color: rgba(0, 0, 0, 0.404);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.topCard {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottomCard {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.textDescription {
+  color: rgb(190, 180, 180);
+  font-size: 15px;
+  font-weight: 100;
+  margin: 0;
+}
+
+.containerRight {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.mainText {
+  font-size: 20px;
+  margin: 0;
+}
+
+.middleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.windContainer {
+  align-items: end;
+}
