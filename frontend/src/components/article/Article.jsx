@@ -21,12 +21,12 @@ function Article() {
       {newArticle.results
         ? newArticle.results.map(
             (article, index) =>
-              index < 3 && (
+              index < 2 && (
                 <ArticleCard
                   key={article.id}
                   title={article.title}
                   url={article.url}
-                  imageUrl={article.image_url}
+                  /* imageUrl={article.image_url} */
                   summary={article.summary}
                 />
               )
