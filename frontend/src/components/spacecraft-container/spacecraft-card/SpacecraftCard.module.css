@@ -1,9 +1,17 @@
-.spaceCraftCard {
-  background-color: black;
-  color: white;
-  width: 25vw;
+.cardContainer {
+  background-color: rgba(0, 0, 0, 0.535);
+  color: whitesmoke;
+  width: 100vw;
+  text-align: center;
+  padding: 2%;
+  border-radius: 15px;
 }
 
 .craftImage {
-  width: 25vw;
+  width: 14vw;
+  border-radius: 15px;
+}
+
+.inuseInfo {
+  font-size: small;
 }
