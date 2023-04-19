@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./ArticleCard.css";
+import "./ArticleCard.module.css";
 
 function ArticleCard({ title, summary, imageUrl, url }) {
   return (
