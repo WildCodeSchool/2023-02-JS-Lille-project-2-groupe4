@@ -76,6 +76,15 @@
   margin: 0;
 }
 
+.moreInfosLink {
+  color: white;
+  margin: 0;
+  font-weight: 100;
+  cursor: pointer;
+  font-size: 14px;
+  color: #af75ff;
+}
+
 .button {
   font-size: 50px;
   color: rgba(190, 180, 180, 0.452);

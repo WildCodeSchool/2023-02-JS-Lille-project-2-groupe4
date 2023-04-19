@@ -4,6 +4,7 @@ import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 import styles from "./NextLaunchContainer.module.css";
 import CountdownTimer from "./countdownTimer/CountdownTimer";
 import Weather from "./weather/Weather";
+import InfosModal from "./infosModal/InfosModal";
 
 function NextLaunchContainer() {
   const url = `https://ll.thespacedevs.com/2.2.0/launch/upcoming/`;
@@ -15,7 +16,7 @@ function NextLaunchContainer() {
     axios
       .get(url, {
         headers: {
-          Authorization: import.meta.env.TOKEN,
+          Authorization: "Token 87af67c54abc7fe84a7e97b181686474262f3da5",
         },
       })
       .then((response) => {
@@ -70,6 +71,15 @@ function NextLaunchContainer() {
               <h1 className={styles.missionName}>
                 {data.results[launcherIndex].mission.name}
               </h1>
+            ) : null}
+
+            {data.results ? (
+              <InfosModal
+                missionName={data.results[launcherIndex].mission.name}
+                missionDescription={
+                  data.results[launcherIndex].mission.description
+                }
+              />
             ) : null}
           </div>
           <div className={styles.rocketContainer}>
