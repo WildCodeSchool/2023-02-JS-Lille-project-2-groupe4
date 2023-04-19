@@ -7,12 +7,14 @@ function NavBar() {
   return (
     <nav className={styles.navBarContainer}>
       <div className={styles.logoContainer}>
-        <img
-          className={styles.heliusLogo}
-          src={logo}
-          alt="helius logo"
-          href="/#"
-        />
+        <Link to="/">
+          <img
+            className={styles.heliusLogo}
+            src={logo}
+            alt="helius logo"
+            href="/#"
+          />
+        </Link>
       </div>
 
       <ul className={styles.navListsContainer}>
