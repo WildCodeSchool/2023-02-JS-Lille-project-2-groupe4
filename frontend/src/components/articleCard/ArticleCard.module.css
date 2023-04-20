@@ -1,24 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
-.articleCard{
+.articleCard {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: rgba(22, 2, 22, 0.596);
   border-radius: 15px;
   color: whitesmoke;
-  }
-
-
-
-.artTitle{
-    font-family: poppins, sans-serif;
-  font-weight: bolder;
+  align-items: center;
 }
 
-.artSum{
+.artImg {
+  width: 200px;
+  height: 100px;
+}
+
+.artTitle {
+  font-family: poppins, sans-serif;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+.artSum {
   font-size: small;
   font-family: poppins, sans-serif;
-  
 }
 
 .artUrl {
