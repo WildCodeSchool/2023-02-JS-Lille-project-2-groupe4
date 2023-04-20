@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
 
 .navBarContainer {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -49,4 +49,10 @@
 
 .navbarLink:active {
   color: rgba(190, 180, 180, 0.452);
+}
+
+@media only screen and (min-width: 500px) {
+  .navBarContainer {
+    display: flex;
+  }
 }

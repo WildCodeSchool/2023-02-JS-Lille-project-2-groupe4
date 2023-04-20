@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./Footer.module.css";
 import { FaGithub } from "react-icons/fa";
+import styles from "./Footer.module.css";
 
-const Footer = () => {
+function Footer() {
   return (
     <div className={styles.footerContainer}>
       <p className={styles.footerText}>
@@ -12,6 +12,7 @@ const Footer = () => {
           className={styles.wildCodeSchoolLink}
           href="https://www.wildcodeschool.com/"
           target="_blank"
+          rel="noreferrer"
         >
           Wild Code School
         </a>
@@ -23,12 +24,13 @@ const Footer = () => {
           className={styles.aContainer}
           href="https://github.com/Romain-Constant"
           target="_blank"
+          rel="noreferrer"
         >
           <FaGithub className={styles.githubIcon} />
         </a>
       </p>
     </div>
   );
-};
+}
 
 export default Footer;
