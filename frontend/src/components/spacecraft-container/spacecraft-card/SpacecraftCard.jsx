@@ -5,11 +5,11 @@ import styles from "./SpacecraftCard.module.css";
 export default function SpacecraftCard({ imgSrc, name, inUse, description }) {
   return (
     <div className={styles.cardContainer}>
-      <div className={styles.spaceCraftCard}>
+      <div>
         <img className={styles.craftImage} src={imgSrc} alt="SpaceCraft" />
         <div className={styles.bodyContainer}>
           <div className={styles.infoContainer}>
-            <h2 className={styles.bodyTitle}>{name}</h2>
+            <h3 className={styles.bodyTitle}>{name}</h3>
             <h4 className={styles.inuseInfo}>
               {inUse ? "active" : "in-active"}
             </h4>
