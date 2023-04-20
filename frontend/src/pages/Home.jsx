@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "@components/navBar/NavBar";
-import NextLaunchContainer from "../components/nextLaunch/NextLaunchContainer";
 import Footer from "@components/footer/Footer";
+import NextLaunchContainer from "../components/nextLaunch/NextLaunchContainer";
 import styles from "./Home.module.css";
 
 function Home() {
