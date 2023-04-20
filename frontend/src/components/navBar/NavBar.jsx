@@ -22,7 +22,7 @@ function NavBar() {
           <Link to="/">Home</Link>
         </li>
         <li className={styles.navText}>
-          <Link to="/agencies">Agencies</Link>
+          <Link to="agencies">Agencies</Link>
         </li>
         <li className={styles.navText}>
           <Link to="/#">Spacecrafts</Link>
