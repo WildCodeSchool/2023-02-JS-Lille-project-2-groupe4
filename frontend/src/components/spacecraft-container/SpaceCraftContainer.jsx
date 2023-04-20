@@ -16,44 +16,46 @@ export default function SpaceCraftContainer() {
           Authorization: "Token 87af67c54abc7fe84a7e97b181686474262f3da5",
         },
       })
-      .then((response) => setSpacecraftData(response.data));
+      .then((response) => {
+        setSpacecraftData(response.data.results);
+      });
   }, []);
 
-  const nextCraft = () => {
-    setNewSpacecraft(
-      newSpacecraft === spacecraftData.results.length - 1
-        ? 0
-        : (craftIndex) => craftIndex + 2
-    );
-  };
+  const nextCraft = () =>
+    newSpacecraft <= 6
+      ? setNewSpacecraft(newSpacecraft + 2)
+      : setNewSpacecraft(0);
 
-  const prevCraft = () => {
-    setNewSpacecraft(
-      newSpacecraft === 0
-        ? spacecraftData.results.length - 1
-        : (craftIndex) => craftIndex - 2
-    );
-  };
+  const prevCraft = () =>
+    newSpacecraft >= 2
+      ? setNewSpacecraft(newSpacecraft - 2)
+      : setNewSpacecraft(8);
 
   return (
     <div className={styles.containerSpacecraft}>
       <div className={styles.leftButtonContainer}>
         <FaAngleLeft className={styles.button} onClick={() => prevCraft()} />
       </div>
-      {spacecraftData.results
-        ? spacecraftData.results.map(
-            (craft, index) =>
-              index < 2 && (
-                <SpacecraftCard
-                  key={craft.id}
-                  imgSrc={craft.spacecraft_config.image_url}
-                  name={craft.name}
-                  inUse={craft.spacecraft_config.in_use}
-                  description={craft.description}
-                />
-              )
-          )
-        : null}
+      {spacecraftData.length > 0 && (
+        <div className="containerAll">
+          <SpacecraftCard
+            key={spacecraftData[newSpacecraft].id}
+            imgSrc={spacecraftData[newSpacecraft].spacecraft_config.image_url}
+            name={spacecraftData[newSpacecraft].name}
+            inUse={spacecraftData[newSpacecraft].spacecraft_config.in_use}
+            description={spacecraftData[newSpacecraft].description}
+          />
+          <SpacecraftCard
+            key={spacecraftData[newSpacecraft + 1].id}
+            imgSrc={
+              spacecraftData[newSpacecraft + 1].spacecraft_config.image_url
+            }
+            name={spacecraftData[newSpacecraft + 1].name}
+            inUse={spacecraftData[newSpacecraft + 1].spacecraft_config.in_use}
+            description={spacecraftData[newSpacecraft + 1].description}
+          />
+        </div>
+      )}
       <div className={styles.rightButtonContainer}>
         <FaAngleRight className={styles.button} onClick={() => nextCraft()} />
       </div>
