@@ -35,17 +35,18 @@
   list-style: none;
 }
 
-a:link,
-a:visited {
+.navbarLink:link,
+.navbarLink:visited {
   text-decoration: none;
   color: white;
 }
 
-a:hover {
+.navbarLink:hover {
   cursor: pointer;
   color: #9364d4;
+  transition: color 0.2s ease-out;
 }
 
-a:active {
+.navbarLink:active {
   color: rgba(190, 180, 180, 0.452);
 }

@@ -19,19 +19,29 @@ function NavBar() {
 
       <ul className={styles.navListsContainer}>
         <li className={styles.navText}>
-          <Link to="/">Home</Link>
+          <Link className={styles.navbarLink} to="/">
+            Home
+          </Link>
         </li>
         <li className={styles.navText}>
-          <Link to="agencies">Agencies</Link>
+          <Link className={styles.navbarLink} to="agencies">
+            Agencies
+          </Link>
         </li>
         <li className={styles.navText}>
-          <Link to="/#">Spacecrafts</Link>
+          <Link className={styles.navbarLink} to="/#">
+            Spacecrafts
+          </Link>
         </li>
         <li className={styles.navText}>
-          <Link to="/#">Astronauts</Link>
+          <Link className={styles.navbarLink} to="/#">
+            Astronauts
+          </Link>
         </li>
         <li className={styles.navText}>
-          <Link to="/#">In Memoriam</Link>
+          <Link className={styles.navbarLink} to="/#">
+            In Memoriam
+          </Link>
         </li>
       </ul>
     </nav>
