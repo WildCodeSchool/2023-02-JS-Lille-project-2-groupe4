@@ -26,14 +26,14 @@
   width: 35vw;
   height: 75vh;
   border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.535);
+  background-color: rgba(0, 0, 0, 0.353);
 }
 
 .rightContainer {
   width: 35vw;
   height: 75vh;
   border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.535);
+  background-color: rgba(0, 0, 0, 0.303);
 }
 
 .button {
