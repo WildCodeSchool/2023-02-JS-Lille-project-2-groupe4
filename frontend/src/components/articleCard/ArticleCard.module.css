@@ -2,33 +2,25 @@
 .articleCard {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  background-color: rgba(22, 2, 22, 0.596);
+
+  background-color: rgba(0, 0, 0, 0.404);
   border-radius: 15px;
   color: whitesmoke;
   align-items: center;
-  padding-bottom: 5%;
+  padding: 10px;
+  margin: 10px;
 }
 
 .artImg {
-  width: 200px;
-  height: 100px;
+  max-width: 65%;
+
   border-radius: 15px;
 }
 
 .artTitle {
-  font-family: poppins, sans-serif;
-  font-weight: bolder;
-  font-size: 1.5vh;
-}
+  font-size: 1.6vh;
 
-/* .artSum {
-  font-size: small;
   font-family: poppins, sans-serif;
+  padding: 0 10%;
+  margin: 0;
 }
-
-.artUrl {
-  font-style: italic;
-  font-family: poppins, sans-serif;
-  font-size: 10px;
-} */
