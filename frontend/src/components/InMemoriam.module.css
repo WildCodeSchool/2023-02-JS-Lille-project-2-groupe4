@@ -63,10 +63,13 @@
 
 .nameOfShip {
   font-size: 50px;
-  margin-top: 0px;
+  margin-top: -45px;
+  margin-right: 150px;
 }
 
 .astroCard {
+  display:flex;
+  flex-wrap: wrap;
   width: 300px;
   border: 2px solid red;
   margin-left: 900px;
