@@ -7,3 +7,18 @@
   flex-direction: column;
   align-items: center;
 }
+
+.launchAndArticleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90vw;
+}
+
+.leftContainer {
+  width: 70%;
+}
+
+.rightContainer {
+  width: 20%;
+}
