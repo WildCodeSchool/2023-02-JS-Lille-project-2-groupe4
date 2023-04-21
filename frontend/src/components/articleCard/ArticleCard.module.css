@@ -7,20 +7,23 @@
   border-radius: 15px;
   color: whitesmoke;
   align-items: center;
+  padding-bottom: 5%;
+  
 }
 
 .artImg {
   width: 200px;
   height: 100px;
+  border-radius: 15px;
 }
 
 .artTitle {
   font-family: poppins, sans-serif;
   font-weight: bolder;
-  font-size: 15px;
+  font-size: 1.5vh;
 }
 
-.artSum {
+/* .artSum {
   font-size: small;
   font-family: poppins, sans-serif;
 }
@@ -29,4 +32,4 @@
   font-style: italic;
   font-family: poppins, sans-serif;
   font-size: 10px;
-}
+} */
