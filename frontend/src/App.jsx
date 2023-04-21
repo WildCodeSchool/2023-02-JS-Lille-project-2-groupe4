@@ -1,12 +1,12 @@
-import Home from "./pages/Home";
 
 import "./App.css";
+
+import InMemoriam from "./components/InMemoriam";
 
 function App() {
   return (
     <div className="App">
-      <Home />
-      <p>coucou</p>
+      {<InMemoriam />}
     </div>
   );
 }

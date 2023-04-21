@@ -1,0 +1,80 @@
+.card {
+    width: 70vw;
+    height: 35vw;
+    border: solid 2px black;
+    border-radius: 20px;
+    margin-top: 5%;
+    flex-direction: column;
+    overflow: hidden;
+    margin-left: 70px;
+    background-color: azure;
+}
+
+.containerGauche {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.containerDroite {
+    display: flex;
+    align-items:flex-end;
+    flex-direction: column;
+    margin-top: -600px;
+    margin-right: 100px;
+
+}
+
+.profilePhoto {
+    width: 50px;
+    height: 50px;
+}
+
+.astronautesName {
+    margin-left: 850px;
+}
+
+
+.imageShip {
+    height:450px;
+    width: 625px;
+    border-radius: 16px;
+}
+
+
+
+.astronautes {
+    margin-left: 650px;
+    display: inline-flex;
+}
+
+.date {
+    display: flex;
+    margin-left: 105px;
+    margin-top: 3px;
+    margin-bottom: 0;
+    font-size: 50px;
+    background-color: grey;
+    border-radius: 20px;
+
+}
+
+.badgeMission {
+    width: 160px;
+    height: 150px;
+    margin-left: 200px;
+    padding-top: 0;
+}
+
+.nameOfShip {
+    font-size: 50px;
+    margin-top: 0px;
+}
+
+
+
+
+.astroCard {
+    width: 300px;
+    border: 2px solid red;
+}
