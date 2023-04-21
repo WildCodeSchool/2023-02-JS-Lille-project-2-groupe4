@@ -5,7 +5,6 @@
   border-radius: 20px;
   margin-top: 5%;
   flex-direction: column;
-  overflow: hidden;
   margin-left: 70px;
   background-color: azure;
 }
@@ -69,4 +68,5 @@
 .astroCard {
   width: 300px;
   border: 2px solid red;
+  margin-left: 500px;
 }

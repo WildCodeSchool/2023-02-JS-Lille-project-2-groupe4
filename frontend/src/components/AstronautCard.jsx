@@ -15,9 +15,7 @@ function AstronautCard({ astronaut }) {
 }
 
 AstronautCard.propTypes = {
-  astronaut: PropTypes.string.isRequired,
-  profile_image: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
+  astronaut: PropTypes.object.isRequired,
 };
 
 export default AstronautCard;
