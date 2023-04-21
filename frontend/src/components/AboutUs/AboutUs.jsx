@@ -2,7 +2,7 @@ import AboutUsCard from "../AboutUsCard/AboutUsCard";
 import styles from "./AboutUs.module.css";
 
 export default function AboutUs() {
-  const arrayOfUs = [
+  /* const arrayOfUs = [
     {
       name: "Romain Constant",
       Title: "The Commander",
@@ -55,7 +55,7 @@ export default function AboutUs() {
       linkedin: "https://www.linkedin.com/in/jocelyn-deloose/",
       Github: "https://github.com/JocelynDeloose",
     },
-  ];
+  ]; */
   return (
     <div className={styles.abUsContainer}>
       <AboutUsCard />
