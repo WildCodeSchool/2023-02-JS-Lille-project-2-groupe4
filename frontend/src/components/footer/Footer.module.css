@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+
+.footerContainer {
+  /*   background-color: rgba(0, 0, 0, 0.398); */
+  width: 100vw;
+  height: 60px;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+.footerText {
+  color: rgb(190, 180, 180);
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  margin-left: 1.2rem;
+}
+
+.wildCodeSchoolLink {
+  color: rgb(190, 180, 180);
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.wildCodeSchoolLink:hover {
+  cursor: pointer;
+  color: #9364d4;
+  transition: color 0.2s ease-out;
+}
+
+.wildCodeSchoolLink:active {
+  color: rgba(190, 180, 180, 0.452);
+}
+
+.iconContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.aContainer {
+  margin-top: 6px;
+}
+
+.githubIcon {
+  color: rgb(190, 180, 180);
+  font-size: 35px;
+  margin-right: 1.2rem;
+  cursor: pointer;
+}
+
+.githubIcon:link,
+.githubIcon:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.githubIcon:hover {
+  cursor: pointer;
+  color: #9364d4;
+  transition: color 0.2s ease-out;
+}
+
+.githubIcon:active {
+  color: rgba(190, 180, 180, 0.452);
+}

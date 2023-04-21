@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+
+.moreInfosLink {
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  border: none;
+  font-weight: 200;
+  cursor: pointer;
+  font-size: 14px;
+  color: #af75ff;
+}
