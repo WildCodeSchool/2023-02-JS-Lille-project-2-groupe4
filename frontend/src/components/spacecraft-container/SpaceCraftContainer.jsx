@@ -7,7 +7,7 @@ import SpacecraftCard from "./spacecraft-card/SpacecraftCard";
 export default function SpaceCraftContainer() {
   const url = `https://ll.thespacedevs.com/2.2.0/spacecraft/`;
 
-  const [newSpacecraft, setNewSpacecraft] = useState();
+  const [newSpacecraft, setNewSpacecraft] = useState(0);
   const [spacecraftData, setSpacecraftData] = useState({});
   useEffect(() => {
     axios

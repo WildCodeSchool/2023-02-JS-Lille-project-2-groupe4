@@ -5,38 +5,39 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 2%;
 }
 
 .containerCard {
-  width: 48vw;
-  height: 60vh;
+  width: 50vw;
+  height: 75vh;
   display: flex;
   align-items: center;
-  margin-right: 5%;
-  gap: 52px;
-  padding: 20px;
+  gap: 40px;
+  padding: 58px;
   font-family: "Poppins", sans-serif;
   text-align: center;
   color: whitesmoke;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
 }
 
 .leftContainer {
-  width: 24vw;
-  height: 77vh;
+  width: 35vw;
+  height: 75vh;
   border-radius: 15px;
   background-color: rgba(0, 0, 0, 0.535);
 }
 
 .rightContainer {
-  width: 24vw;
-  height: 77vh;
+  width: 35vw;
+  height: 75vh;
   border-radius: 15px;
   background-color: rgba(0, 0, 0, 0.535);
 }
 
 .button {
-  font-size: 50px;
+  font-size: 40px;
   color: rgba(190, 180, 180, 0.452);
   cursor: pointer;
   z-index: 2;
