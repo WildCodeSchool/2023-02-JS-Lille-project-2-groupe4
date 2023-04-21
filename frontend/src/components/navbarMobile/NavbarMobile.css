@@ -112,7 +112,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   background: rgba(0, 0, 0, 0.3);
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 768px) {
   .bm-burger-button {
     display: none;
   }

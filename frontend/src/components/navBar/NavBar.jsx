@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "@assets/images/logoHelius-removebg-preview1.png";
+import logo from "@assets/images/LOGO_FINAL_HELIUS_SN.png";
 import styles from "./NavBar.module.css";
 
 function NavBar() {
