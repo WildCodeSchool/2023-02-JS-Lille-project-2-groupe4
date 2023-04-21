@@ -46,15 +46,11 @@ export default function InMemoriam() {
                 />
               </div>
               <div>
+                <h2 className={styles.nameOfShip}>{mission.mission_name}</h2>
                 {mission.astronauts.map((astronaut) => (
-                  <AstronautCard
-                    astronaut={astronaut}
-                    key={astronaut.name}
-                    className={styles.astroContainer}
-                  />
+                  <AstronautCard astronaut={astronaut} key={astronaut.name} />
                 ))}
               </div>
-
               <div />
             </div>
           ))}

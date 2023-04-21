@@ -24,8 +24,9 @@
 }
 
 .profilePhoto {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
 }
 
 .astronautesName {
@@ -68,5 +69,6 @@
 .astroCard {
   width: 300px;
   border: 2px solid red;
-  margin-left: 500px;
+  margin-left: 900px;
 }
+

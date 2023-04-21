@@ -15,7 +15,7 @@ function AstronautCard({ astronaut }) {
 }
 
 AstronautCard.propTypes = {
-  astronaut: PropTypes.object.isRequired,
+  astronaut: PropTypes.shape.isRequired,
 };
 
 export default AstronautCard;

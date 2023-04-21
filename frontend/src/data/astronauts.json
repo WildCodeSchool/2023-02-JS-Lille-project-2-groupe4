@@ -7,8 +7,7 @@
         "astronauts": [
             {
                 "profile_image": "https://spacelaunchnow-prod-east.nyc3.digitaloceanspaces.com/media/astronaut_images/christa2520mcauliffe_image_20181207232919.jpg",
-                "name": "Christa McAuliffe",
-                "badge": "https://www.google.com/url?sa=i&url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FNational_Aeronautics_and_Space_Administration&psig=AOvVaw2sGEm5hq61vFNfGQevU8qm&ust=1681994307077000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCIjz8Z77tf4CFQAAAAAdAAAAABAE"
+                "name": "Christa McAuliffe"
             },
             {
                 "profile_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Scobee-fr.jpg/480px-Scobee-fr.jpg",
