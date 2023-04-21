@@ -1,4 +1,3 @@
-
 import "./App.css";
 
 import InMemoriam from "./components/InMemoriam";
@@ -6,7 +5,7 @@ import InMemoriam from "./components/InMemoriam";
 function App() {
   return (
     <div className="App">
-      {<InMemoriam />}
+      <InMemoriam />
     </div>
   );
 }
