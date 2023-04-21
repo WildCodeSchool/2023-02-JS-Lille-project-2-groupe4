@@ -8,7 +8,7 @@
   color: whitesmoke;
   align-items: center;
   padding: 10px;
-  margin: 10px;
+  margin: 10px 20px;
 }
 
 .artImg {
@@ -19,8 +19,22 @@
 
 .artTitle {
   font-size: 1.6vh;
+  font-weight: 200;
 
-  font-family: poppins, sans-serif;
-  padding: 0 10%;
+  font-family: "Poppins", sans-serif;
+  padding: 0 5%;
   margin: 0;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.artTitle:hover {
+  cursor: pointer;
+  color: #9364d4;
+  transition: color 0.2s ease-out;
+}
+
+.articleCard:link,
+.articleCard:visited {
+  text-decoration: none;
 }

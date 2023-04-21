@@ -11,6 +11,7 @@
   background-color: rgba(0, 0, 0, 0.404);
   padding: 15px;
   border-radius: 15px;
+  margin-bottom: 20px;
 }
 
 .countdownTimer span {

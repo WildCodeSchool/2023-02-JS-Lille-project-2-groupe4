@@ -9,3 +9,8 @@
   font-size: 14px;
   color: #af75ff;
 }
+
+.moreInfosLink:hover {
+  color: white;
+  transition: color 0.2s ease-out;
+}

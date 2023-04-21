@@ -6,6 +6,7 @@
   background-color: black;
   display: flex;
   align-items: center;
+  margin-bottom: 4rem;
 }
 
 .logoContainer {

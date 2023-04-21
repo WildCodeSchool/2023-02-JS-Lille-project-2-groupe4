@@ -19,20 +19,22 @@ function Article() {
   return (
     <div className={styles.articlesContainer}>
       <h2 className={styles.newsTitle}>Last News</h2>
-      {newArticle.results
-        ? newArticle.results.map(
-            (article, index) =>
-              index < 2 && (
-                <ArticleCard
-                  key={article.id}
-                  title={article.title}
-                  url={article.url}
-                  imageUrl={article.image_url}
-                  /* summary={article.summary} */
-                />
-              )
-          )
-        : null}
+      <div className={styles.scrollContainer}>
+        {newArticle.results
+          ? newArticle.results.map(
+              (article, index) =>
+                index < 10 && (
+                  <ArticleCard
+                    key={article.id}
+                    title={article.title}
+                    url={article.url}
+                    imageUrl={article.image_url}
+                    /* summary={article.summary} */
+                  />
+                )
+            )
+          : null}
+      </div>
     </div>
   );
 }
