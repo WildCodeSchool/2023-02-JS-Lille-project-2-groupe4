@@ -29,6 +29,17 @@ function Footer() {
           <FaGithub className={styles.githubIcon} />
         </a>
       </p>
+      <p className={styles.footerText}>
+        <a
+          className={styles.aboutUs}
+          href="https://www.wildcodeschool.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          About us
+        </a>
+        .
+      </p>
     </div>
   );
 }
