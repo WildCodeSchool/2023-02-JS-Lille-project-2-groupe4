@@ -16,7 +16,7 @@ function NextLaunchContainer() {
     axios
       .get(url, {
         headers: {
-          Authorization: "Token 87af67c54abc7fe84a7e97b181686474262f3da5",
+          Authorization: import.meta.env.VITE_TOKEN,
         },
       })
       .then((response) => {
