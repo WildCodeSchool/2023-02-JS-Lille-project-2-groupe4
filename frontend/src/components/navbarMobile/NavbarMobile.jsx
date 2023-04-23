@@ -13,27 +13,27 @@ export default function MenuComponent() {
         </Link>
         <div className="separator" />
 
-        <Link id="about" className="menu-item" to="agencies">
+        <Link id="about" className="menu-item" to="/pads">
           Pads
         </Link>
         <div className="separator" />
 
-        <Link id="contact" className="menu-item" to="/#">
+        <Link id="contact" className="menu-item" to="/spacecrafts">
           Spacecrafts
         </Link>
         <div className="separator" />
 
-        <Link id="contact" className="menu-item" to="/#">
+        <Link id="contact" className="menu-item" to="/astronauts">
           Astronauts
         </Link>
         <div className="separator" />
 
-        <Link id="contact" className="menu-item" to="/#">
+        <Link id="contact" className="menu-item" to="/inmemoriam">
           In Memoriam
         </Link>
         <div className="separator" />
 
-        <Link id="contact" className="menu-item" to="/#">
+        <Link id="contact" className="menu-item" to="/aboutus">
           About us
         </Link>
       </Menu>

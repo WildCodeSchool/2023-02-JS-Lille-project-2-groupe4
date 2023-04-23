@@ -10,8 +10,20 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "agencies",
+    path: "/pads",
     element: <Agencies />,
+  },
+  {
+    path: "/spacecrafts",
+    element: <Home />,
+  },
+  {
+    path: "/astronauts",
+    element: <Home />,
+  },
+  {
+    path: "/inmemoriam",
+    element: <Home />,
   },
 ]);
 

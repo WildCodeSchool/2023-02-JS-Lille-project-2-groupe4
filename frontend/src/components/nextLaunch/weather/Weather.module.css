@@ -56,3 +56,9 @@
 .windContainer {
   align-items: end;
 }
+
+@media only screen and (max-width: 768px) {
+  .weatherContainer {
+    display: none;
+  }
+}

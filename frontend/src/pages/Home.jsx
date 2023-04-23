@@ -3,6 +3,7 @@ import NavBar from "@components/navBar/NavBar";
 import NavbarMobile from "@components/navbarMobile/NavbarMobile";
 import Footer from "@components/footer/Footer";
 import NextLaunchContainer from "../components/nextLaunch/NextLaunchContainer";
+import NextLaunchMobile from "../components/nextLaunch/nextLaunchMobile/NextLaunchMobile";
 import Article from "../components/article/Article";
 
 import styles from "./Home.module.css";
@@ -19,6 +20,9 @@ function Home() {
         <div className={styles.rightContainer}>
           <Article />
         </div>
+      </div>
+      <div className={styles.launchAndArticleMobileContainer}>
+        <NextLaunchMobile />
       </div>
 
       <Footer />
