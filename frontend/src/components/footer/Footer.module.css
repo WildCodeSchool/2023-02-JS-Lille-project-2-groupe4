@@ -86,3 +86,15 @@
 .githubIcon:active {
   color: rgba(190, 180, 180, 0.452);
 }
+
+@media only screen and (max-width: 768px) {
+  .footerText,
+  .aboutUs,
+  .wildCodeSchoolLink {
+    font-size: 8px;
+  }
+
+  .githubIcon {
+    font-size: 20px;
+  }
+}

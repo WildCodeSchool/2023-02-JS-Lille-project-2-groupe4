@@ -21,7 +21,7 @@ function Home() {
           <Article />
         </div>
       </div>
-      <div className={styles.launchAndArticleMobileContainer}>
+      <div className={styles.launchMobileContainer}>
         <NextLaunchMobile />
       </div>
 

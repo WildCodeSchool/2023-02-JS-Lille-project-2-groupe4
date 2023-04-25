@@ -10,7 +10,7 @@ function Article() {
     axios
       .get("https://api.spaceflightnewsapi.net/v4/articles/", {
         headers: {
-          Authorization: "Token 87af67c54abc7fe84a7e97b181686474262f3da5",
+          Authorization: import.meta.env.VITE_TOKEN,
         },
       })
       .then((response) => setNewArticle(response.data));
