@@ -1,0 +1,6 @@
+.Testpage {
+  max-width: 100vw;
+  max-height: 100wh;
+  background-image: url("../assets/space-BG1.png");
+  background-size: cover;
+}
