@@ -1,21 +1,22 @@
 import PropTypes from "prop-types";
 import styles from "./InMemoriam.module.css";
 
-function AstronautCard({ astronaut }) {
+function AstronautCard({ photo, name }) {
   return (
     <div className={styles.astroCard}>
       <img
         className={styles.profilePhoto}
-        src={astronaut.profile_image}
+        src={photo}
         alt="Photos of astronauts"
       />
-      <h2>{astronaut.name}</h2>
+      <h2 className={styles.astroName}>{name}</h2>
     </div>
   );
 }
 
 AstronautCard.propTypes = {
-  astronaut: PropTypes.shape.isRequired,
+  photo: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
 };
 
 export default AstronautCard;

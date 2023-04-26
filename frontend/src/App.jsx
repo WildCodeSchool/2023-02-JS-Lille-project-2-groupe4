@@ -1,11 +1,10 @@
+import InMemoriamPage from "@pages/InMemoriamPage";
 import "./App.css";
-
-import InMemoriam from "./components/InMemoriam";
 
 function App() {
   return (
     <div className="App">
-      <InMemoriam />
+      <InMemoriamPage />
     </div>
   );
 }
