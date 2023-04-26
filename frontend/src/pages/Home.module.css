@@ -25,6 +25,7 @@
 
 .leftContainer {
   width: 70%;
+  display: flex;
 }
 
 .rightContainer {

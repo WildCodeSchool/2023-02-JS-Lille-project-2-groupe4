@@ -4,7 +4,7 @@ import styles from "./ArticleCard.module.css";
 
 function ArticleCard({ title, imageUrl, url }) {
   return (
-    <div>
+    <div className={styles.articleBloc}>
       <a
         className={styles.articleCard}
         href={url}

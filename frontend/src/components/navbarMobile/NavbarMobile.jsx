@@ -13,8 +13,8 @@ export default function MenuComponent() {
         </Link>
         <div className="separator" />
 
-        <Link id="about" className="menu-item" to="/pads">
-          Pads
+        <Link id="about" className="menu-item" to="/articles">
+          Articles
         </Link>
         <div className="separator" />
 

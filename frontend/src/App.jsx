@@ -1,5 +1,6 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import ArticlesMobilePage from "@pages/ArticlesMobilePage";
 import styles from "./App.module.css";
 import Home from "./pages/Home";
 import Agencies from "./pages/Agencies";
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
   {
     path: "/pads",
     element: <Agencies />,
+  },
+  {
+    path: "/articles",
+    element: <ArticlesMobilePage />,
   },
   {
     path: "/spacecrafts",
