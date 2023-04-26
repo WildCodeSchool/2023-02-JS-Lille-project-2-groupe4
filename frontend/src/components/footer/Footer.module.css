@@ -91,10 +91,22 @@
   .footerText,
   .aboutUs,
   .wildCodeSchoolLink {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .githubIcon {
-    font-size: 20px;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  .footerText,
+  .aboutUs,
+  .wildCodeSchoolLink {
+    font-size: 14px;
+  }
+
+  .githubIcon {
+    font-size: 24px;
   }
 }

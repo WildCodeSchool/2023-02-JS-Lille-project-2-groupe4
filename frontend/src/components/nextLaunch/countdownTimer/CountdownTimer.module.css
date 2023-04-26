@@ -21,12 +21,12 @@
 
 .twoNumbers {
   width: 2ch;
-  font-size: 30px;
+  font-size: 2.2vw;
   font-weight: 400;
 }
 
 .time {
-  font-size: 30px;
+  font-size: 2.2vw;
   font-weight: 400;
 }
 
@@ -38,7 +38,7 @@
 
 .units {
   color: rgb(190, 180, 180);
-  font-size: 20px;
+  font-size: 1.5vw;
   font-weight: 100;
 }
 
