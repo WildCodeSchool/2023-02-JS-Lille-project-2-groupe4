@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
 
-.homeContainer {
+.agenciesContainer {
   background-image: url(../assets/images/space-BG1.png);
   background-size: cover;
   width: 100vw;
@@ -10,10 +10,8 @@
   align-items: center;
 }
 
-.launchAndArticleContainer {
+.padsAndArticlesContainer {
   display: flex;
-  flex-direction: row;
-  align-items: stretch;
   justify-content: space-between;
   gap: 5vw;
   width: 90vw;
@@ -24,25 +22,12 @@
   margin-top: 150px;
 }
 
-.leftContainer {
-  width: 70%;
-  display: flex;
+.button {
+  font-size: 50px;
+  background-color: rgba(0, 0, 0, 0.535);
+  cursor: pointer;
 }
 
-.rightContainer {
-  width: 30%;
-}
-
-.launchMobileContainer {
-  display: none;
-}
-
-@media only screen and (max-width: 960px) {
-  .launchAndArticleContainer {
-    display: none;
-  }
-
-  .launchMobileContainer {
-    display: flex;
-  }
+.button:active {
+  color: white;
 }

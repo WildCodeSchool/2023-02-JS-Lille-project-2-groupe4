@@ -12,6 +12,7 @@
   background-color: rgba(0, 0, 0, 0.404);
   padding: 15px;
   border-radius: 15px;
+  margin-top: 20px;
 }
 
 .topCard {
@@ -54,4 +55,10 @@
 
 .windContainer {
   align-items: end;
+}
+
+@media only screen and (max-width: 768px) {
+  .weatherContainer {
+    display: none;
+  }
 }

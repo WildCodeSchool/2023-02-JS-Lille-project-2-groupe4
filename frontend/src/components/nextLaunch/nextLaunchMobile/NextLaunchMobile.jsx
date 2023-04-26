@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
-import styles from "./NextLaunchContainer.module.css";
-import CountdownTimer from "./countdownTimer/CountdownTimer";
-import Weather from "./weather/Weather";
-import InfosModal from "./infosModal/InfosModal";
+import styles from "./NextLaunchMobile.module.css";
+import CountdownTimer from "../countdownTimer/CountdownTimer";
+import InfosModal from "../infosModal/InfosModal";
 
-function NextLaunchContainer() {
+function NextLaunchMobile() {
   const url = `https://ll.thespacedevs.com/2.2.0/launch/upcoming/`;
 
   const [launcherIndex, setLauncherIndex] = useState(0);
@@ -41,34 +40,25 @@ function NextLaunchContainer() {
   };
 
   return (
-    <div className={styles.nextLaunchContainer}>
+    <div className={styles.launchAndButtonsContainer}>
       <div className={styles.leftButtonContainer}>
         <FaAngleLeft className={styles.button} onClick={() => prevLaunch()} />
       </div>
-      <div className={styles.leftContainer}>
-        <div className={styles.launcherImageContainer}>
+      <div className={styles.nextLaunchMobileContainer}>
+        <div className={styles.launcherImageMobileContainer}>
           {data.results ? (
             <img
-              className={styles.launcherImage}
+              className={styles.launcherMobileImage}
               src={data.results[launcherIndex].image}
               alt="launcher"
             />
           ) : null}
         </div>
-        {data.results ? (
-          <CountdownTimer data={data} launcherIndex={launcherIndex} />
-        ) : null}
-      </div>
-
-      <div className={styles.rightContainer}>
-        {data.results ? (
-          <Weather dataLauncher={data} launcherIndex={launcherIndex} />
-        ) : null}
-        <div className={styles.descriptionContainer}>
-          <div className={styles.missionContainer}>
-            <p className={styles.titleDescription}>Mission Name</p>
+        <div className={styles.descriptionMobileContainer}>
+          <div className={styles.missionMobileContainer}>
+            <p className={styles.titleMobileDescription}>Mission Name</p>
             {data.results ? (
-              <h1 className={styles.missionName}>
+              <h1 className={styles.missionMobileName}>
                 {data.results[launcherIndex].mission.name}
               </h1>
             ) : null}
@@ -82,30 +72,35 @@ function NextLaunchContainer() {
               />
             ) : null}
           </div>
-          <div className={styles.rocketContainer}>
-            <p className={styles.titleDescription}>Rocket</p>
+          <div className={styles.rocketMobileContainer}>
+            <p className={styles.titleMobileDescription}>Rocket</p>
             {data.results ? (
-              <h1 className={styles.missionName}>
+              <h1 className={styles.missionMobileName}>
                 {data.results[launcherIndex].rocket.configuration.name}
               </h1>
             ) : null}
           </div>
-          <div className={styles.padContainer}>
-            <p className={styles.titleDescription}>Pad</p>
+          <div className={styles.padMobileContainer}>
+            <p className={styles.titleMobileDescription}>Pad</p>
             {data.results ? (
-              <h1 className={styles.missionName}>
+              <h1 className={styles.missionMobileName}>
                 {data.results[launcherIndex].pad.name}
               </h1>
             ) : null}
           </div>
-          <div className={styles.providerContainer}>
-            <p className={styles.titleDescription}>Service Provider</p>
+          <div className={styles.providerMobileContainer}>
+            <p className={styles.titleMobileDescription}>Service Provider</p>
             {data.results ? (
-              <h1 className={styles.missionName}>
+              <h1 className={styles.missionMobileName}>
                 {data.results[launcherIndex].launch_service_provider.name}
               </h1>
             ) : null}
           </div>
+        </div>
+        <div className={styles.countdownMobileContainer}>
+          {data.results ? (
+            <CountdownTimer data={data} launcherIndex={launcherIndex} />
+          ) : null}
         </div>
       </div>
       <div className={styles.rightButtonContainer}>
@@ -115,4 +110,4 @@ function NextLaunchContainer() {
   );
 }
 
-export default NextLaunchContainer;
+export default NextLaunchMobile;
