@@ -2,7 +2,6 @@
 .articleCard {
   display: flex;
   flex-direction: column;
-
   background-color: rgba(0, 0, 0, 0.404);
   border-radius: 15px;
   color: whitesmoke;
@@ -13,14 +12,12 @@
 
 .artImg {
   max-width: 65%;
-
   border-radius: 15px;
 }
 
 .artTitle {
   font-size: 1.6vh;
   font-weight: 200;
-
   font-family: "Poppins", sans-serif;
   padding: 0 5%;
   margin: 0;

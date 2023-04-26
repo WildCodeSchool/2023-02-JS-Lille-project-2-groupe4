@@ -6,6 +6,7 @@
   align-items: center;
   border-radius: 15px;
   background-color: rgba(0, 0, 0, 0.535);
+  margin-top: 100px;
 }
 
 .nextLaunchMobileContainer {
@@ -13,7 +14,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   font-family: "Poppins", sans-serif;
   color: white;
 }
@@ -31,7 +31,6 @@
 
 .launcherMobileImage {
   width: 70%;
-
   border-radius: 15px;
 }
 

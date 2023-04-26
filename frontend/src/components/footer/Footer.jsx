@@ -6,8 +6,7 @@ function Footer() {
   return (
     <div className={styles.footerContainer}>
       <p className={styles.footerText}>
-        {" "}
-        &#169; Helius project for{" "}
+        &#169; Helius project for&nbsp;
         <a
           className={styles.wildCodeSchoolLink}
           href="https://www.wildcodeschool.com/"

@@ -29,7 +29,6 @@ function Article() {
                     title={article.title}
                     url={article.url}
                     imageUrl={article.image_url}
-                    /* summary={article.summary} */
                   />
                 )
             )
