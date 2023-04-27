@@ -1,4 +1,4 @@
-import Home from "./pages/Home";
+/* import Home from "./pages/Home"; */
 import Test from "./pages/Test";
 
 import "./App.css";

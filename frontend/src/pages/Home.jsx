@@ -1,5 +1,5 @@
 import React from "react";
-import AboutUs from "../components/AboutUs/AboutUs";
+/* import AboutUs from "../components/AboutUs/AboutUs"; */
 import NextLaunchContainer from "../components/nextLaunch/NextLaunchContainer";
 import Article from "../components/article/Article";
 import styles from "./Home.module.css";
