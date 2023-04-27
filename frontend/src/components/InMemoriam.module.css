@@ -124,3 +124,34 @@
   display: flex;
   align-items: center;
 }
+
+@media screen and (max-width: 428px) {
+
+  .citation {
+    display:none;
+  }
+
+  .card {
+    width: 816px;
+    height: 1396px;
+    margin-top: -3%;
+  }
+
+  .containerDroite {
+    margin-top: 85%;
+    margin-left: -88%;
+  }
+
+  .containerGauche {
+    margin-left: 10%;
+    margin-top: 3%;
+  }
+
+  .title {
+    margin-top: 68%;
+    margin-right: -93%;
+    font-size: 49PX;
+  }
+
+
+}
