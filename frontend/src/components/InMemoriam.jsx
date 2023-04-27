@@ -34,7 +34,7 @@ export default function InMemoriam() {
         </div>
         <div className={styles.card}>
           <div className={styles.astroContainer}>
-            <div key={astroData[memory].name} style={{ display: "flex" }}>
+            <div key={astroData.name} style={{ display: "flex" }}>
               <div className={styles.containerGauche}>
                 <img
                   src={astroData[memory].photo_equipe}
