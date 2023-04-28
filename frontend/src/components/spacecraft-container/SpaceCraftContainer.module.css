@@ -1,0 +1,77 @@
+.containerSpacecraft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerCard {
+  width: 50vw;
+  height: 75vh;
+  display: flex;
+  margin-top: 160px;
+  gap: 110px;
+  padding: 58px;
+}
+
+.leftContainer {
+  width: 425px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.353);
+}
+
+.rightContainer {
+  width: 425px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.303);
+}
+
+.button {
+  font-size: 40px;
+  color: rgba(190, 180, 180, 0.452);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.button:active {
+  color: whitesmoke;
+}
+
+@media only screen and (max-width: 950px) {
+  .rightContainer {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .rightContainer {
+    display: none;
+  }
+
+  .containerCard {
+    width: 78vw;
+    height: 61vh;
+    display: flex;
+    align-items: center;
+    padding: 28px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+  }
+
+  .leftContainer {
+    width: 250px;
+    height: 61vh;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.353);
+  }
+
+  .button {
+    font-size: 30px;
+    color: rgba(190, 180, 180, 0.452);
+    z-index: 2;
+  }
+}

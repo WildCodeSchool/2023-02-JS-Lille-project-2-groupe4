@@ -11,6 +11,7 @@
   background-color: rgba(0, 0, 0, 0.404);
   padding: 15px;
   border-radius: 15px;
+  margin-bottom: 20px;
 }
 
 .countdownTimer span {
@@ -20,12 +21,12 @@
 
 .twoNumbers {
   width: 2ch;
-  font-size: 30px;
+  font-size: 2.2vw;
   font-weight: 400;
 }
 
 .time {
-  font-size: 30px;
+  font-size: 2.2vw;
   font-weight: 400;
 }
 
@@ -37,6 +38,37 @@
 
 .units {
   color: rgb(190, 180, 180);
-  font-size: 20px;
+  font-size: 1.5vw;
   font-weight: 100;
+}
+
+@media only screen and (max-width: 768px) {
+  .countdownTimer {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    margin-bottom: 15px;
+    padding: 5px;
+  }
+
+  .units {
+    font-size: 3vw;
+  }
+
+  .time,
+  .twoNumbers {
+    font-size: 5vw;
+    font-weight: 300;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  .time,
+  .twoNumbers {
+    font-size: 32px;
+  }
+
+  .units {
+    font-size: 20px;
+  }
 }
