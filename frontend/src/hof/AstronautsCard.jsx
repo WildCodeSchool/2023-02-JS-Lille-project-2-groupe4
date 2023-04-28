@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styles from "./AstronautsPage.module.css";
 
 function AstronautsCard({ data }) {
@@ -30,5 +31,15 @@ function AstronautsCard({ data }) {
     </div>
   );
 }
-
+AstronautsCard.propTypes = {
+  data: PropTypes.shape({
+    profile_image: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    age: PropTypes.string.isRequired,
+    nationality: PropTypes.string.isRequired,
+    flights_count: PropTypes.string.isRequired,
+    bio: PropTypes.string.isRequired,
+    wiki: PropTypes.string.isRequired,
+  }).isRequired,
+};
 export default AstronautsCard;
