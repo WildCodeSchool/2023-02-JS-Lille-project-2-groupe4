@@ -1,33 +1,26 @@
-import logo from "../assets/logo.svg";
+import React from "react";
+import NextLaunchContainer from "../components/nextLaunch/NextLaunchContainer";
+import NextLaunchMobile from "../components/nextLaunch/nextLaunchMobile/NextLaunchMobile";
+import Article from "../components/article/Article";
 
-export default function Home() {
+import styles from "./Home.module.css";
+
+function Home() {
   return (
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>Hello Vite + React !</p>
-
-      <p>
-        Edit <code>App.jsx</code> and save to test HMR updates.
-      </p>
-      <p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        {" | "}
-        <a
-          className="App-link"
-          href="https://vitejs.dev/guide/features.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Vite Docs
-        </a>
-      </p>
-    </header>
+    <div className={styles.homeContainer}>
+      <div className={styles.launchAndArticleContainer}>
+        <div className={styles.leftContainer}>
+          <NextLaunchContainer />
+        </div>
+        <div className={styles.rightContainer}>
+          <Article />
+        </div>
+      </div>
+      <div className={styles.launchMobileContainer}>
+        <NextLaunchMobile />
+      </div>
+    </div>
   );
 }
+
+export default Home;
