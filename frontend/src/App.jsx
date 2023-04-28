@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./App.module.css";
-import Home from "./pages/Home";
+
+import Astronauts from "./pages/Astronauts";
 
 function App() {
   return (
-    <div className={styles.app}>
-      <Home />
+    <div>
+      <Astronauts />
     </div>
   );
 }

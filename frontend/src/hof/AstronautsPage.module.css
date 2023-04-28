@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+div {
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+.container_astronauts {
+  width: 72%;
+  height: 70vh;
+  overflow: hidden scroll;
+  margin: auto;
+  margin-top: 0.5rem;
+}
+.card_astronaute {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  border-radius: 1.5rem;
+  padding: 1.5em;
+  background-color: rgba(0, 0, 0, 0.404);
+  height: fit-content;
+  overflow-x: none;
+  color: white;
+  margin-top: 1.5em;
+}
+
+.card_img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 33vh;
+  margin-right: 2em;
+}
+
+.cont_astro {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  white-space: wrap;
+  text-overflow: ellipsis;
+}
+.img_profile {
+  width: 20vh;
+}
+.button {
+  height: fit-content;
+  width: fit-content;
+  padding: 0.5rem;
+  border: 0.01rem solid #b5aac2;
+  box-shadow: 2px 2px 1px #b5aac2;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: white;
+  margin-left: 0.2;
+  background-color: rgba(0, 0, 0, 0.719);
+}
+
+p {
+  margin: 0.4em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 1rem;
+}
+h3 {
+  margin: 0.5em;
+  margin-bottom: 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+}
+/* SearchBar css */
+.searchBar {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.719);
+  width: 30vh;
+  margin: auto;
+  text-decoration-color: none;
+  font-weight: 600;
+  color: #b5aac2;
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  height: 4vh;
+  border: 0.01rem solid #b5aac2;
+}
+
+.container {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .card_astronaute {
+    max-height: 40vh;
+  }
+}
+
+@media (max-width: 590px) {
+  .cont_astro,
+  .button {
+    display: none;
+  }
+  .card_img {
+    margin: auto;
+    min-width: 1px;
+  }
+  .card_astronaute {
+    padding: 0.3;
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+  .searchBar {
+    width: 65%;
+  }
+  .img_profile {
+    height: 25vh;
+  }
+  p {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+}
