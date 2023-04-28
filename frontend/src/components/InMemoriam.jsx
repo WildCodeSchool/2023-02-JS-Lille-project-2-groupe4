@@ -49,9 +49,16 @@ export default function InMemoriam() {
                 />
               </div>
               <div className={styles.containerDroite}>
-                <h2 className={styles.nameOfShip}>
-                  {astroData[memory].mission_name}
-                </h2>
+                <a
+                  href={astroData[memory].wiki}
+                  target="_blank"
+                  rel="noreferrer"
+                  className={styles.linkWiki}
+                >
+                  <h2 className={styles.nameOfShip}>
+                    {astroData[memory].mission_name}
+                  </h2>
+                </a>
                 <div
                   className={styles.flexmess}
                   style={{ display: "flex", flexWrap: "wrap" }}
@@ -61,6 +68,7 @@ export default function InMemoriam() {
                       photo={astronaut.profile_image}
                       name={astronaut.name}
                       key={astronaut}
+                      wiki={astronaut.wikipedia}
                     />
                   ))}
                 </div>

@@ -27,6 +27,17 @@
   cursor: pointer;
 }
 
+.linkWiki {
+  color: white;
+  text-decoration: none;
+}
+
+.linkWiki:hover {
+  cursor: pointer;
+  color: #9364d4;
+  transition: color 0.2s ease-out;
+}
+
 .profilePhoto {
   width: 100px;
   height: 100px;
@@ -120,9 +131,8 @@
 }
 
 @media (max-width: 426px) {
-
   .citation {
-    display:none;
+    display: none;
   }
 
   .card {
@@ -144,8 +154,6 @@
   .title {
     margin-top: 68%;
     margin-right: -93%;
-    font-size: 49PX;
+    font-size: 49px;
   }
-
-
 }
