@@ -1,13 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import ArticlesMobilePage from "@pages/ArticlesMobilePage";
-import Agencies from "../src/pages/Agencies";
-import SpaceCraft from "../src/pages/SpaceCraft";
+import Home from "./pages/Home";
+import ArticlesMobilePage from "./pages/ArticlesMobilePage";
+import Agencies from "./pages/Agencies";
+import SpaceCraft from "./pages/SpaceCraft";
 import NavBar from "./components/navBar/NavBar";
 import NavbarMobile from "./components/navbarMobile/NavbarMobile";
 import Footer from "./components/footer/Footer";
 import styles from "./App.module.css";
-import InMemoriamPage from "../src/pages/InMemoriamPage";
+import InMemoriamPage from "./pages/InMemoriamPage";
 import "./App.css";
 
 function App() {
