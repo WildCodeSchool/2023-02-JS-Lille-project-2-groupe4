@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
 
-.spacecraftPage {
-  background-image: url(../assets/background-space.png);
+.homeContainer {
+  background-image: url(../assets/images/space-BG1.png);
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-.containerGlobal {
+.launchAndArticleContainer {
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -20,12 +20,29 @@
   max-height: 600px;
   font-family: "Poppins", sans-serif;
   color: white;
-  text-align: center;
   margin: 0;
   margin-top: 150px;
 }
 
-.containerLeft {
+.leftContainer {
   width: 70%;
   display: flex;
+}
+
+.rightContainer {
+  width: 30%;
+}
+
+.launchMobileContainer {
+  display: none;
+}
+
+@media only screen and (max-width: 960px) {
+  .launchAndArticleContainer {
+    display: none;
+  }
+
+  .launchMobileContainer {
+    display: flex;
+  }
 }
