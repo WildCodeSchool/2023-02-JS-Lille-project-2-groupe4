@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+.articleCard {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.404);
+  border-radius: 15px;
+  color: whitesmoke;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 20px;
+}
+
+.artImg {
+  max-width: 65%;
+  border-radius: 15px;
+}
+
+.artTitle {
+  font-size: 1.6vh;
+  font-weight: 200;
+  font-family: "Poppins", sans-serif;
+  padding: 0 5%;
+  margin: 0;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.artTitle:hover {
+  cursor: pointer;
+  color: #9364d4;
+  transition: color 0.2s ease-out;
+}
+
+.articleCard:link,
+.articleCard:visited {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 960px) {
+  .artTitle {
+    font-size: 3vw;
+    font-weight: 300;
+  }
+
+  .articleBloc {
+    margin-bottom: 3vh;
+  }
+}
