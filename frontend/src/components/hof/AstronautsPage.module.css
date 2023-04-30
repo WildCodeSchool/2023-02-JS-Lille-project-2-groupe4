@@ -8,7 +8,7 @@ div {
 }
 .container_astronauts {
   width: 70vw;
-  height: 65vh;
+  height: 59vh;
   overflow: hidden scroll;
   margin: auto;
 }
