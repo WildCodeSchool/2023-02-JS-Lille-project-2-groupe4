@@ -1,5 +1,5 @@
 import React from "react";
-import MapAgencies from "@components/mapAgencies/MapAgencies";
+import MapAgencies from "../components/mapAgencies/MapAgencies";
 import Article from "../components/article/Article";
 import styles from "./Agencies.module.css";
 
