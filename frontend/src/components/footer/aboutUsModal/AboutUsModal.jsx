@@ -1,10 +1,10 @@
 import * as React from "react";
-import PropTypes from "prop-types";
-import { styled } from "@mui/material/styles";
+import { styled, StyledEngineProvider } from "@mui/material/styles";
 import Dialog from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
-import Typography from "@mui/material/Typography";
+import AboutUs from "../../AboutUs/AboutUs";
 import BootstrapDialogTitle from "./bootstrapDialogTitleAboutUs/BootstrapDialogTitleAboutUs";
+import styles from "./AboutUsModal.module.css";
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
@@ -26,42 +26,46 @@ export default function InfosModal() {
   };
 
   return (
-    <div>
-      <button
-        /* className={styles.moreInfosLink} */
-        type="button"
-        onClick={handleClickOpen}
-      >
-        &#40;About us&#41;
-      </button>
-
-      <BootstrapDialog
-        onClose={handleClose}
-        aria-labelledby="customized-dialog-title"
-        open={open}
-        sx={{
-          "& .MuiDialogTitle-root": {
-            color: "black",
-            fontFamily: "Poppins",
-            fontWeight: "500,",
-          },
-        }}
-      >
-        <BootstrapDialogTitle
-          id="customized-dialog-title"
-          onClose={handleClose}
+    <StyledEngineProvider injectFirst>
+      <div>
+        <button
+          className={styles.aboutUsLink}
+          type="button"
+          onClick={handleClickOpen}
         >
-          About Us
-        </BootstrapDialogTitle>
-        <DialogContent dividers>
-          <Typography gutterBottom>Nos têtes</Typography>
-        </DialogContent>
-      </BootstrapDialog>
-    </div>
+          &#40;About us&#41;
+        </button>
+
+        <BootstrapDialog
+          onClose={handleClose}
+          aria-labelledby="customized-dialog-title"
+          open={open}
+          sx={{
+            "& .MuiPaper-root": {
+              color: "whitesmoke",
+              fontFamily: "Poppins",
+              fontWeight: "500,",
+              maxWidth: "75%",
+              backgroundColor: "black",
+              display: "flex",
+            },
+            "& .MuiBackdrop-root": {
+              backgroundColor: "rgba(0, 0, 0, 0.700)",
+            },
+          }}
+        >
+          <BootstrapDialogTitle
+            id="customized-dialog-title"
+            onClose={handleClose}
+          >
+            About Us
+          </BootstrapDialogTitle>
+          <div className={styles.divider} />
+          <DialogContent className={styles.dialogContent}>
+            <AboutUs />
+          </DialogContent>
+        </BootstrapDialog>
+      </div>
+    </StyledEngineProvider>
   );
 }
-
-/* InfosModal.propTypes = {
-  missionName: PropTypes.string.isRequired,
-  missionDescription: PropTypes.string.isRequired,
-}; */

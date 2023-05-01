@@ -25,6 +25,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 12px;
+  text-decoration: underline;
 }
 
 .wildCodeSchoolLink:hover {
@@ -34,23 +35,6 @@
 }
 
 .wildCodeSchoolLink:active {
-  color: rgba(190, 180, 180, 0.452);
-}
-
-.aboutUs {
-  color: rgb(190, 180, 180);
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-size: 12px;
-}
-
-.aboutUs:hover {
-  cursor: pointer;
-  color: #9364d4;
-  transition: color 0.2s ease-out;
-}
-
-.aboutUs:active {
   color: rgba(190, 180, 180, 0.452);
 }
 
