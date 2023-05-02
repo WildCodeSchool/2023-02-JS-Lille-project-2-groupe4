@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import styles from "./InMemoriam.module.css";
+import styles from "./AstronautCard.module.css";
 
 function AstronautCard({ photo, name, wiki }) {
   return (

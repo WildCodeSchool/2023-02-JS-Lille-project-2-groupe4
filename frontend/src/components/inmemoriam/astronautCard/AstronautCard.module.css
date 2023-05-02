@@ -1,0 +1,53 @@
+.astroCard {
+  background-color: rgba(0, 0, 0, 0.404);
+  width: 7rem;
+  height: 7rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  margin: 0;
+  padding: 10px;
+}
+
+.linkWiki {
+  color: white;
+  text-decoration: none;
+}
+
+.linkWiki:hover {
+  cursor: pointer;
+  color: #9364d4;
+  transition: color 0.2s ease-out;
+}
+
+.profilePhoto {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+
+.astroName {
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  .profilePhoto {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .astroName {
+    font-size: 14px;
+  }
+
+  .astroCard {
+    width: 5rem;
+    height: 5rem;
+  }
+}
