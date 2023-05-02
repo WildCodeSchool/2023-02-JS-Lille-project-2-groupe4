@@ -21,3 +21,9 @@
   color: #9364d4;
   transition: color 0.2s ease-out;
 }
+
+@media only screen and (max-width: 768px) {
+  .aboutUsLink {
+    font-size: 10px;
+  }
+}

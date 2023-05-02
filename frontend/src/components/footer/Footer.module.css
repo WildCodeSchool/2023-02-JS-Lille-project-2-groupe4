@@ -83,6 +83,9 @@
   .wildCodeSchoolLink {
     font-size: 10px;
   }
+  .githubIconNoHover {
+    display: none;
+  }
 
   .githubIcon {
     font-size: 22px;
