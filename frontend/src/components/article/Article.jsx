@@ -28,7 +28,7 @@ function Article() {
                     key={article.id}
                     title={article.title}
                     url={article.url}
-                    imageUrl={article.image_url}
+                    imageUrl={article.imageUrl}
                   />
                 )
             )
