@@ -2,7 +2,6 @@ import React from "react";
 import NextLaunchContainer from "../components/nextLaunch/NextLaunchContainer";
 import NextLaunchMobile from "../components/nextLaunch/nextLaunchMobile/NextLaunchMobile";
 import Article from "../components/article/Article";
-
 import styles from "./Home.module.css";
 
 function Home() {
