@@ -49,7 +49,7 @@ const arrayOfUs = [
     title: '"Space Smog"',
     imgSrc: `${photoAlexandre}`,
     email: "a.rohde.ferreira@gmail.com",
-    linkedin: "www.linkedin.com/in/AlexRohdeF",
+    linkedin: "https://www.linkedin.com/in/AlexRohdeF/",
     github: "https://github.com/KriZpAlex",
   },
 

@@ -40,19 +40,23 @@ function HallFame() {
   };
 
   return (
-    <div className={styles.container}>
-      <input
-        className={styles.searchBar}
-        type="text"
-        placeholder="Search"
-        value={search}
-        onChange={handleChange}
-      />
-      <div className={styles.container_astronauts}>
+    <div className={styles.astronautsAndSearchContainer}>
+      <div className={styles.searchContainer}>
+        <input
+          className={styles.searchBar}
+          type="text"
+          placeholder="Search"
+          value={search}
+          onChange={handleChange}
+        />
+      </div>
+
+      <div className={styles.astronautsContainer}>
         {filteredAstronauts.map((element) => (
           <AstronautsCard data={element} key={element.id} />
         ))}
       </div>
+      <div className={styles.seeMore}>Scroll down to see more &#8595;</div>
     </div>
   );
 }

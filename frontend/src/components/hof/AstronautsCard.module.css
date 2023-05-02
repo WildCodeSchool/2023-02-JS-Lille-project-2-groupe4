@@ -1,0 +1,93 @@
+.astronautCard {
+  width: 90%;
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+  justify-content: space-between;
+  margin: 20px 0;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.404);
+  padding: 15px;
+}
+
+.img_profile {
+  width: 9rem;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+
+.astronautName {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.astronautAge {
+  margin: 0;
+  font-weight: 300;
+}
+
+.astronautDescription {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.astronautNationality {
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.astronautFlightNumber {
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.astronautBio {
+  margin: 0;
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+.wikiButton {
+  margin: 0;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 24px;
+}
+
+@media (max-width: 576px) {
+  .astronautCard {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 10px 0;
+  }
+
+  .astronautDescription {
+    width: 100%;
+  }
+
+  .nameAndImage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .astronautDescription {
+    align-items: center;
+  }
+
+  .astronautBio {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .astronautName {
+    margin-bottom: 5px;
+  }
+}

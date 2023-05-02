@@ -1,32 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
 
 .page {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  height: 100vw;
-  height: 100vh;
-  background-image: url(../assets/background-space.png);
+  align-items: center;
+  background-image: url(../assets/astronauts-background.jpeg);
   background-size: cover;
 }
 .containerall {
   display: flex;
-  justify-content: space-evenly;
-  width: 100vw;
-  max-height: 71vh;
-  overflow: hidden;
-  margin-top: 19vh;
-  margin-bottom: auto;
+  align-items: stretch;
+  align-content: stretch;
+  justify-content: space-between;
+  gap: 5vw;
+  width: 90vw;
+  height: 65vh;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin: 0;
+  margin-top: 12rem;
+}
+
+.card_astronaute {
+  width: 70%;
 }
 
 .article {
-  width: 30vh;
+  width: 30%;
   max-height: 76vh;
 }
-@media (max-width: 960px) {
+@media (max-width: 576px) {
   .article {
     display: none;
   }
   .containerall {
+    width: 100vw;
     justify-content: center;
+    margin-top: 5rem;
+    height: 80vh;
+  }
+
+  .card_astronaute {
+    width: 90%;
   }
 }

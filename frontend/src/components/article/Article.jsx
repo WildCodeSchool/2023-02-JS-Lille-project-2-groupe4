@@ -8,11 +8,7 @@ function Article() {
 
   useEffect(() => {
     axios
-      .get("https://api.spaceflightnewsapi.net/v4/articles/", {
-        headers: {
-          Authorization: import.meta.env.VITE_TOKEN,
-        },
-      })
+      .get("https://api.spaceflightnewsapi.net/v4/articles/")
       .then((response) => setNewArticle(response.data));
   }, []);
 
@@ -34,6 +30,7 @@ function Article() {
             )
           : null}
       </div>
+      <div className={styles.seeMore}>Scroll down to see more &#8595;</div>
     </div>
   );
 }

@@ -6,132 +6,69 @@ div {
 *::-webkit-scrollbar {
   display: none;
 }
-.container_astronauts {
-  width: 70vw;
-  height: 59vh;
-  overflow: hidden scroll;
-  margin: auto;
-}
-.card_astronaute {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  border-radius: 1.5rem;
-  padding: 1.5em;
-  background-color: rgba(0, 0, 0, 0.404);
-  height: fit-content;
-  overflow-x: none;
-  color: white;
-  margin-bottom: 1.5em;
-}
 
-.card_img {
+.astronautsAndSearchContainer {
+  width: 100%;
+  max-height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  min-width: 33vh;
+  background-color: rgba(0, 0, 0, 0.404);
+  border-radius: 15px;
 }
 
-.cont_astro {
+.searchContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.astronautsContainer {
+  width: 100%;
+  max-height: 100%;
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  white-space: wrap;
-  text-overflow: ellipsis;
-}
-.img_profile {
-  width: 20vh;
-}
-.button {
-  height: fit-content;
-  width: fit-content;
-  padding: 0.5rem;
-  border: 0.01rem solid #b5aac2;
-  box-shadow: 2px 2px 1px #b5aac2;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  color: white;
-  margin-left: 0.2;
-  background-color: rgba(0, 0, 0, 0.719);
+  align-items: center;
+  margin-top: 20px;
 }
 
-p {
-  margin: 0.4em;
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-size: 0.8rem;
-}
-h3 {
-  margin: 0.5em;
-  margin-bottom: 0;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.2rem;
-}
 /* SearchBar css */
 .searchBar {
   all: unset;
   display: flex;
-  background-color: rgba(0, 0, 0, 0.719);
+  background-color: rgba(0, 0, 0, 0.404);
   width: 30vh;
   text-decoration-color: none;
-  font-weight: 600;
-  color: #b5aac2;
+  font-weight: 300;
+  color: whitesmoke;
   border-radius: 1.5rem;
   padding: 0.5rem;
   padding-left: 1.5rem;
   height: 3vh;
   border: 0.01rem solid #b5aac2;
-  margin-bottom: 1rem;
+  margin: 20px 0 0 0;
+  font-family: "Poppins", sans-serif;
 }
 
-.container {
-  border-radius: 1.5rem;
-  padding: 1.5em;
-  padding-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.404);
-  overflow: auto;
+.seeMore {
+  padding: 15px;
+  font-weight: 100;
+  font-size: 14px;
+  color: #af75ff;
 }
 
-@media (max-width: 1000px) {
-  .card_astronaute {
-    max-height: 40vh;
+@media (max-width: 576px) {
+  .astronautsAndSearchContainer {
+    width: 100%;
   }
-}
 
-@media (max-width: 960px) {
-  .cont_astro,
-  .button {
-    display: none;
-  }
-  .card_img {
-    margin: auto;
-    min-width: 1px;
-  }
-  .card_astronaute {
-    padding: 0.3;
-    margin-top: 1rem;
-    padding: 1rem;
-  }
-  .searchBar {
-    width: 65%;
-  }
-  .img_profile {
-    height: 25vh;
-  }
-  p {
-    font-size: 0.8rem;
+  .astronautsContainer {
     margin: 0;
   }
-  h3 {
-    font-size: 1rem;
-  }
+
   .searchBar {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .container_astronauts {
-    width: auto;
+    margin-bottom: 20px;
   }
 }
