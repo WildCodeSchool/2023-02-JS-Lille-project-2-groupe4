@@ -1,5 +1,5 @@
 import React from "react";
-import SpaceCraftContainer from "@components/spacecraft-container/SpaceCraftContainer";
+import SpaceCraftContainer from "../components/spacecraft-container/SpaceCraftContainer";
 import Article from "../components/article/Article";
 import styles from "./SpaceCraft.module.css";
 

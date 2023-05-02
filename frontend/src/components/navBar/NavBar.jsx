@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "./LOGO_FINAL_HELIUS_SN.png";
+import logo from "../../assets/images/LOGO_FINAL_HELIUS_SN.png";
 import styles from "./NavBar.module.css";
 
 function NavBar() {

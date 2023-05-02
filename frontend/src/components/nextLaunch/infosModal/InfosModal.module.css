@@ -14,3 +14,16 @@
   color: white;
   transition: color 0.2s ease-out;
 }
+
+.dialogContent {
+  background-color: black;
+  color: whitesmoke;
+  font-weight: 200;
+  font-family: "Poppins", sans-serif;
+}
+
+.divDivider {
+  width: 80%;
+  height: 1px;
+  color: rgb(127, 6, 6);
+}

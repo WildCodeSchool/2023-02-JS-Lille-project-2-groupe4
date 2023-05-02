@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
+import AboutUsModal from "./aboutUsModal/AboutUsModal";
 import styles from "./Footer.module.css";
 
 function Footer() {
@@ -28,17 +29,7 @@ function Footer() {
           <FaGithub className={styles.githubIcon} />
         </a>
       </p>
-      <p className={styles.footerText}>
-        <a
-          className={styles.aboutUs}
-          href="https://www.wildcodeschool.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          About us
-        </a>
-        .
-      </p>
+      <AboutUsModal />
     </div>
   );
 }
