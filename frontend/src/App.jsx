@@ -9,7 +9,6 @@ import NavbarMobile from "./components/navbarMobile/NavbarMobile";
 import Footer from "./components/footer/Footer";
 import styles from "./App.module.css";
 import Astronauts from "./pages/Astronauts";
-
 import InMemoriamPage from "./pages/InMemoriamPage";
 import "./App.css";
 
