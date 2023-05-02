@@ -51,7 +51,7 @@ export default function InfosModal({ missionName, missionDescription }) {
               alignItems: "center",
             },
             "& .MuiBackdrop-root": {
-              backgroundColor: "rgba(0, 0, 0, 0.700)",
+              backgroundColor: "rgba(0, 0, 0, 0.850)",
             },
           }}
         >

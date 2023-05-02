@@ -8,8 +8,7 @@
 
 .imgContainer {
   border-radius: 10px;
-
-  height: 25vh;
+  height: 30vh;
   overflow: hidden;
   display: flex;
   border-radius: 10px;
@@ -37,7 +36,7 @@
   background-color: rgb(66, 15, 114, 0.635);
   border-radius: 15px;
   padding: 1%;
-  width: 33%;
+  width: 50%;
   margin: 0;
   font-size: 1rem;
   margin-bottom: 1rem;
@@ -47,10 +46,15 @@
   margin: 0;
   font-size: 1rem;
   text-overflow: ellipsis;
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
 }
 
-.infoSpacecraft {
-  text-overflow: ellipsis;
-  overflow: hidden;
+@media screen and (max-width: 576px) {
+  .imgContainer {
+    height: 20vh;
+  }
+
+  .inuseInfo {
+    width: 50%;
+  }
 }

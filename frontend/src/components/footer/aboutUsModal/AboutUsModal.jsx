@@ -50,7 +50,7 @@ export default function InfosModal() {
               display: "flex",
             },
             "& .MuiBackdrop-root": {
-              backgroundColor: "rgba(0, 0, 0, 0.700)",
+              backgroundColor: "rgba(0, 0, 0, 0.850)",
             },
           }}
         >
