@@ -35,3 +35,19 @@
   text-align: center;
   margin: 0;
 }
+
+@media (max-width: 576px) {
+  .profilePhoto {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .astroName {
+    font-size: 14px;
+  }
+
+  .astroCard {
+    width: 5rem;
+    height: 5rem;
+  }
+}

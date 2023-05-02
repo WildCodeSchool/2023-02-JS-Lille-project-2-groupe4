@@ -31,3 +31,18 @@
 .articlesContainer {
   width: 30%;
 }
+
+@media (max-width: 576px) {
+  .articlesContainer {
+    display: none;
+  }
+
+  .inmemoriamContainer {
+    width: 100%;
+  }
+
+  .inmemoriamAndArticlesContainer {
+    min-height: 70vh;
+    overflow-y: auto;
+  }
+}
