@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "@assets/images/LOGO_FINAL_HELIUS_SN.png";
+import logo from "../../assets/images/LOGO_FINAL_HELIUS_SN.png";
 import styles from "./NavBar.module.css";
 
 function NavBar() {
@@ -28,7 +28,6 @@ function NavBar() {
             Home
             <div className={styles.underline} />
           </NavLink>
-          ;
         </li>
         <li className={styles.navText}>
           <NavLink
@@ -40,7 +39,6 @@ function NavBar() {
             Pads
             <div className={styles.underline} />
           </NavLink>
-          ;
         </li>
 
         <li className={styles.navText}>
@@ -53,7 +51,6 @@ function NavBar() {
             Spacecrafts
             <div className={styles.underline} />
           </NavLink>
-          ;
         </li>
         <li className={styles.navText}>
           <NavLink
@@ -65,7 +62,6 @@ function NavBar() {
             Astronauts
             <div className={styles.underline} />
           </NavLink>
-          ;
         </li>
         <li className={styles.navText}>
           <NavLink
@@ -77,7 +73,6 @@ function NavBar() {
             InMemoriam
             <div className={styles.underline} />
           </NavLink>
-          ;
         </li>
       </ul>
     </nav>

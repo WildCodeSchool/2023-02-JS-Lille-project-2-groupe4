@@ -28,4 +28,42 @@
 .containerLeft {
   width: 70%;
   display: flex;
+  height: 100%;
+}
+
+.containerRight {
+  width: 30%;
+}
+
+@media only screen and (max-width: 960px) {
+  .containerRight {
+    display: none;
+  }
+
+  .containerLeft {
+    width: 90vw;
+  }
+
+  .containerGlobal {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .rightContainer {
+    display: none;
+  }
+
+  .leftContainer {
+    width: 100%;
+  }
+
+  .containerGlobal {
+    margin-top: 100px;
+  }
+}
+
+.containerLeft {
+  width: 70%;
+  display: flex;
 }

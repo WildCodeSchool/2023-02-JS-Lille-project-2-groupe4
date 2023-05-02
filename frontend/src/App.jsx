@@ -1,14 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import ArticlesMobilePage from "@pages/ArticlesMobilePage";
-import Agencies from "@pages/Agencies";
-import SpaceCraft from "@pages/SpaceCraft";
+import Home from "./pages/Home";
+import ArticlesMobilePage from "./pages/ArticlesMobilePage";
+import Agencies from "./pages/Agencies";
+import SpaceCraft from "./pages/SpaceCraft";
 import NavBar from "./components/navBar/NavBar";
 import NavbarMobile from "./components/navbarMobile/NavbarMobile";
 import Footer from "./components/footer/Footer";
 import styles from "./App.module.css";
-import Home from "./pages/Home";
-
+import InMemoriamPage from "./pages/InMemoriamPage";
 import "./App.css";
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
           <Route path="/articles" element={<ArticlesMobilePage />} />
           <Route path="/spacecrafts" element={<SpaceCraft />} />
           <Route path="/astronauts" element={<Home />} />
-          <Route path="/inmemoriam" element={<Home />} />
+          <Route path="/inmemoriam" element={<InMemoriamPage />} />
         </Routes>
         <Footer />
       </div>

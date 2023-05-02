@@ -1,10 +1,10 @@
 import * as React from "react";
-import PropTypes from "prop-types";
 import { styled, StyledEngineProvider } from "@mui/material/styles";
 import Dialog from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
-import styles from "./InfosModal.module.css";
-import BootstrapDialogTitle from "./bootstrapDialogTitle/BootstrapDialogTitle";
+import AboutUs from "../../AboutUs/AboutUs";
+import BootstrapDialogTitle from "./bootstrapDialogTitleAboutUs/BootstrapDialogTitleAboutUs";
+import styles from "./AboutUsModal.module.css";
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
@@ -15,7 +15,7 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   },
 }));
 
-export default function InfosModal({ missionName, missionDescription }) {
+export default function InfosModal() {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -29,11 +29,11 @@ export default function InfosModal({ missionName, missionDescription }) {
     <StyledEngineProvider injectFirst>
       <div>
         <button
-          className={styles.moreInfosLink}
+          className={styles.aboutUsLink}
           type="button"
           onClick={handleClickOpen}
         >
-          &#40;More info&#41;
+          &#40;About us&#41;
         </button>
 
         <BootstrapDialog
@@ -41,14 +41,13 @@ export default function InfosModal({ missionName, missionDescription }) {
           aria-labelledby="customized-dialog-title"
           open={open}
           sx={{
-            "& .MuiDialogTitle-root": {
+            "& .MuiPaper-root": {
               color: "whitesmoke",
               fontFamily: "Poppins",
               fontWeight: "500,",
+              maxWidth: "75%",
               backgroundColor: "black",
               display: "flex",
-              flexDirection: "center",
-              alignItems: "center",
             },
             "& .MuiBackdrop-root": {
               backgroundColor: "rgba(0, 0, 0, 0.700)",
@@ -59,19 +58,14 @@ export default function InfosModal({ missionName, missionDescription }) {
             id="customized-dialog-title"
             onClose={handleClose}
           >
-            {missionName}
+            About Us
           </BootstrapDialogTitle>
-          <div className={styles.divDivider} />
+          <div className={styles.divider} />
           <DialogContent className={styles.dialogContent}>
-            {missionDescription}
+            <AboutUs />
           </DialogContent>
         </BootstrapDialog>
       </div>
     </StyledEngineProvider>
   );
 }
-
-InfosModal.propTypes = {
-  missionName: PropTypes.string.isRequired,
-  missionDescription: PropTypes.string.isRequired,
-};

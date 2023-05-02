@@ -3,41 +3,48 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-}
-
-.containerCard {
-  width: 50vw;
-  height: 75vh;
-  display: flex;
-  margin-top: 160px;
-  gap: 110px;
-  padding: 58px;
-}
-
-.leftContainer {
-  width: 425px;
   border-radius: 15px;
   background-color: rgba(0, 0, 0, 0.353);
 }
 
+.containerCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  align-items: stretch;
+}
+
+.leftContainer,
 .rightContainer {
-  width: 425px;
-  border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.303);
+  width: 45%;
+}
+
+.inuseInfo {
+  width: 30%;
 }
 
 .button {
   font-size: 40px;
   color: rgba(190, 180, 180, 0.452);
   cursor: pointer;
-  z-index: 2;
 }
 
 .button:active {
   color: whitesmoke;
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 760px) {
+  .rightContainer {
+    display: none;
+  }
+
+  .leftContainer {
+    width: 100%;
+  }
+}
+/* 
+@media only screen and (min-width: 960px) {
   .rightContainer {
     display: none;
   }
@@ -74,4 +81,4 @@
     color: rgba(190, 180, 180, 0.452);
     z-index: 2;
   }
-}
+} */
