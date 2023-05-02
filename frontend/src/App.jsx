@@ -8,6 +8,7 @@ import NavBar from "./components/navBar/NavBar";
 import NavbarMobile from "./components/navbarMobile/NavbarMobile";
 import Footer from "./components/footer/Footer";
 import styles from "./App.module.css";
+import Astronauts from "./pages/Astronauts";
 import InMemoriamPage from "./pages/InMemoriamPage";
 import "./App.css";
 
@@ -22,7 +23,7 @@ function App() {
           <Route path="/pads" element={<Agencies />} />
           <Route path="/articles" element={<ArticlesMobilePage />} />
           <Route path="/spacecrafts" element={<SpaceCraft />} />
-          <Route path="/astronauts" element={<Home />} />
+          <Route path="/astronauts" element={<Astronauts />} />
           <Route path="/inmemoriam" element={<InMemoriamPage />} />
         </Routes>
         <Footer />

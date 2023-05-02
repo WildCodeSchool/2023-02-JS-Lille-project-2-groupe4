@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vw;
+  height: 100vh;
+  background-image: url(../assets/background-space.png);
+  background-size: cover;
+}
+.containerall {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+  max-height: 71vh;
+  overflow: hidden;
+  margin-top: 19vh;
+  margin-bottom: auto;
+}
+
+.article {
+  width: 30vh;
+  max-height: 76vh;
+}
+@media (max-width: 960px) {
+  .article {
+    display: none;
+  }
+  .containerall {
+    justify-content: center;
+  }
+}
