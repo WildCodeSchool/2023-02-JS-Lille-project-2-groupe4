@@ -1,0 +1,135 @@
+.inMemoContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.535);
+  border-radius: 15px;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.buttonsAndInfosContainer {
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+  justify-content: space-between;
+}
+
+.middleMemoriamContainer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.infosLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infosRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.astronautsContainer {
+  display: flex;
+  align-items: center;
+  align-content: stretch;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.title {
+  margin: 0;
+}
+
+.citation {
+  margin: 0;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.rightButtonContainer,
+.leftButtonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+}
+
+.button {
+  font-size: 50px;
+  color: rgba(190, 180, 180, 0.452);
+  cursor: pointer;
+}
+
+.imageShip {
+  width: 300px;
+  height: 240px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.date {
+  display: flex;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.404);
+  border-radius: 20px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+
+.badgeMission {
+  max-height: 140px;
+  width: auto;
+
+  margin-bottom: 20px;
+}
+
+.nameOfShip {
+  margin: 1rem 0 3rem 0;
+  color: whitesmoke;
+}
+
+/* @media (max-width: 426px) {
+  .citation {
+    display: none;
+  }
+
+  .card {
+    width: 816px;
+    height: 1396px;
+    margin-top: -3%;
+  }
+
+  .containerDroite {
+    margin-top: 85%;
+    margin-left: -88%;
+  }
+
+  .containerGauche {
+    margin-left: 10%;
+    margin-top: 3%;
+  }
+
+  .title {
+    margin-top: 68%;
+    margin-right: -93%;
+    font-size: 49px;
+  }
+} */

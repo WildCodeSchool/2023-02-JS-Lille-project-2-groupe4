@@ -13,9 +13,11 @@
 .padsAndArticlesContainer {
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
   gap: 5vw;
   width: 90vw;
-  max-height: 600px;
+  height: 65vh;
   font-family: "Poppins", sans-serif;
   color: white;
   margin: 0;
@@ -30,4 +32,12 @@
 
 .button:active {
   color: white;
+}
+
+.leftContainer {
+  width: 70%;
+}
+
+.rightContainer {
+  width: 30%;
 }
