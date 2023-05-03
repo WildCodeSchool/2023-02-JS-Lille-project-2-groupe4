@@ -23,10 +23,18 @@
   overflow-y: scroll;
 }
 
+.seeMore {
+  padding: 15px;
+  font-weight: 100;
+  font-size: 14px;
+  color: #af75ff;
+  font-family: "Poppins", sans-serif;
+}
+
 @media only screen and (max-width: 960px) {
   .articlesContainer {
     width: 90vw;
-    height: 80vh;
+    height: 75vh;
     margin-top: 100px;
   }
 

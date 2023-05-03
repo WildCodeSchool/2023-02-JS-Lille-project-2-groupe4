@@ -3,13 +3,14 @@
   height: 1px;
   padding-left: 20px;
   background-color: white;
+  margin-bottom: 20px;
 }
 
 .aboutUsLink {
   color: rgb(190, 180, 180);
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 15px;
   background-color: transparent;
   border: none;
   padding: 0;
@@ -20,4 +21,10 @@
   cursor: pointer;
   color: #9364d4;
   transition: color 0.2s ease-out;
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutUsLink {
+    font-size: 10px;
+  }
 }

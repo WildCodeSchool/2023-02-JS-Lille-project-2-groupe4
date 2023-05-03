@@ -4,11 +4,23 @@
   width: 60vw;
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+
   gap: 20px;
   border-radius: 15px;
   background-color: rgba(0, 0, 0, 0.535);
+}
+
+.nextLaunchTitle {
+  margin: 0;
+}
+
+.launchContainer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
 }
 
 .leftContainer,

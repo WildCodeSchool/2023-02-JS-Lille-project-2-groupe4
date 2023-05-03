@@ -21,7 +21,7 @@
   width: 90vw;
   max-height: 600px;
   margin: 0;
-  margin-top: 150px;
+  margin-top: 12rem;
 }
 
 .inmemoriamContainer {
@@ -39,10 +39,19 @@
 
   .inmemoriamContainer {
     width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    overflow-y: scroll;
   }
 
   .inmemoriamAndArticlesContainer {
-    min-height: 70vh;
+    min-height: 80vh;
     overflow-y: auto;
+    margin-top: 5rem;
+    height: 80vh;
+  }
+
+  .memoriamPage {
+    min-height: 80vh;
   }
 }

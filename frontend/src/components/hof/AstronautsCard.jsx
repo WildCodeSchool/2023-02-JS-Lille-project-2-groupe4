@@ -1,33 +1,37 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styles from "./AstronautsPage.module.css";
+import { FaWikipediaW } from "react-icons/fa";
+import styles from "./AstronautsCard.module.css";
 
 function AstronautsCard({ data }) {
   return (
-    <div className={styles.card_astronaute}>
-      <div className={styles.card_img}>
+    <div className={styles.astronautCard}>
+      <div className={styles.nameAndImage}>
         <img
           className={styles.img_profile}
           src={data.profile_image}
           alt="imgastronaute"
         />
-        <h3>{data.name}</h3>
-        <br />
-        <p>({data.age} years)</p>
+        <h3 className={styles.astronautName}>{data.name}</h3>
+        <p className={styles.astronautAge}>({data.age} years)</p>
       </div>
-      <div className={styles.cont_astro}>
-        <p>
-          Nationality : {data.nationality} <br />
+      <div className={styles.astronautDescription}>
+        <p className={styles.astronautNationality}>
+          Nationality : {data.nationality}
+        </p>
+        <p className={styles.astronautFlightNumber}>
           Number of flight : {data.flights_count}
-          <br />
-          <br />
+        </p>
+        <p className={styles.astronautBio}>
           Description: <br />
           {data.bio}
         </p>
       </div>
-      <a href={data.wiki} target="blank" className={styles.button}>
-        Wiki
-      </a>
+      <div className={styles.wikiContainer}>
+        <a href={data.wiki} target="blank" className={styles.wikiButton}>
+          <FaWikipediaW />
+        </a>
+      </div>
     </div>
   );
 }

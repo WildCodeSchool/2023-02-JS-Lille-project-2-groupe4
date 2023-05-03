@@ -6,7 +6,7 @@ import styles from "./AstronautsPage.module.css";
 function HallFame() {
   // get api
   const [newAstronauts, setNewAstronauts] = useState({});
-  const url = `https://ll.thespacedevs.com/2.2.0/astronaut/?limit=200`;
+  const url = `https://ll.thespacedevs.com/2.2.0/astronaut/?limit=40`;
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -40,19 +40,23 @@ function HallFame() {
   };
 
   return (
-    <div className={styles.container}>
-      <input
-        className={styles.searchBar}
-        type="text"
-        placeholder="Search"
-        value={search}
-        onChange={handleChange}
-      />
-      <div className={styles.container_astronauts}>
-        {filteredAstronauts.map((element) => (
-          <AstronautsCard data={element} key={element.id} />
-        ))}
+    <div className={styles.astronautsAndSearchContainer}>
+      <div className={styles.searchContainer}>
+        <input
+          className={styles.searchBar}
+          type="text"
+          placeholder="Search"
+          value={search}
+          onChange={handleChange}
+        />
       </div>
+
+      <div className={styles.astronautsContainer}>
+        {filteredAstronauts
+          .map((element) => <AstronautsCard data={element} key={element.id} />)
+          .sort(() => Math.random() - 0.5)}
+      </div>
+      <div className={styles.seeMore}>Scroll down to see more &#8595;</div>
     </div>
   );
 }

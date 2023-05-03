@@ -39,4 +39,11 @@
   .leftContainer {
     width: 100%;
   }
+  .containerSpacecraft {
+    justify-content: space-between;
+  }
+
+  .containerCard {
+    height: 100%;
+  }
 }

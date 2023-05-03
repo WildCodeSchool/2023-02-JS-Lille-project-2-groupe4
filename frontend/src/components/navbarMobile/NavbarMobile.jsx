@@ -67,15 +67,6 @@ export default function MenuComponent() {
         >
           In Memoriam
         </Link>
-        <div className="separator" />
-        <Link
-          id="contact"
-          className="menu-item"
-          to="/aboutus"
-          onClick={() => closeMenu()}
-        >
-          About us
-        </Link>
       </Menu>
       <main id="page-wrap">
         <div className="navbar">
