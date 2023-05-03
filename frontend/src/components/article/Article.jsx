@@ -17,17 +17,19 @@ function Article() {
       <h2 className={styles.newsTitle}>LAST NEWS</h2>
       <div className={styles.scrollContainer}>
         {newArticle &&
-          newArticle.map(
-            (article, index) =>
-              index < 10 && (
-                <ArticleCard
-                  key={article.id}
-                  title={article.title}
-                  url={article.url}
-                  imageUrl={article.imageUrl}
-                />
-              )
-          )}
+          newArticle
+            .map(
+              (article, index) =>
+                index < 10 && (
+                  <ArticleCard
+                    key={article.id}
+                    title={article.title}
+                    url={article.url}
+                    imageUrl={article.imageUrl}
+                  />
+                )
+            )
+            .sort(() => Math.random() - 0.5)}
       </div>
       <div className={styles.seeMore}>Scroll down to see more &#8595;</div>
     </div>

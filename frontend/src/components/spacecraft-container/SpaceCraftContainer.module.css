@@ -11,6 +11,7 @@
 .buttonsAndSpacecraftsContainer {
   display: flex;
   align-items: center;
+  min-height: 100%;
 }
 
 .spacecraftTitleContainer {
@@ -22,6 +23,7 @@
   align-items: center;
   justify-content: space-between;
   align-items: stretch;
+  min-height: 100%;
 }
 
 .leftContainer,
