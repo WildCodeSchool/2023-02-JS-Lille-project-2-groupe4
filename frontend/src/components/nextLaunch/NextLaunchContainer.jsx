@@ -43,7 +43,7 @@ function NextLaunchContainer() {
   return (
     <div className={styles.nextLaunchContainer}>
       <div className={styles.titleContainer}>
-        <h2 className={styles.nextLaunchTitle}>Next Launches</h2>
+        <h2 className={styles.nextLaunchTitle}>NEXT LAUNCHES</h2>
       </div>
       <div className={styles.launchContainer}>
         <div className={styles.leftButtonContainer}>

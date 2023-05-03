@@ -17,11 +17,10 @@
   justify-content: space-between;
   gap: 5vw;
   width: 90vw;
-  height: 65vh;
   font-family: "Poppins", sans-serif;
   color: white;
   margin: 0;
-  margin-top: 12rem;
+  margin-top: 17vh;
 }
 
 .leftContainer {
@@ -30,7 +29,7 @@
 }
 
 .rightContainer {
-  width: 30%;
+  min-width: 30%;
 }
 
 .launchMobileContainer {

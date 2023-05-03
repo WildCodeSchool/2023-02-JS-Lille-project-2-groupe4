@@ -14,7 +14,7 @@ function Article() {
 
   return (
     <div className={styles.articlesContainer}>
-      <h2 className={styles.newsTitle}>Last News</h2>
+      <h2 className={styles.newsTitle}>LAST NEWS</h2>
       <div className={styles.scrollContainer}>
         {newArticle.results
           ? newArticle.results.map(

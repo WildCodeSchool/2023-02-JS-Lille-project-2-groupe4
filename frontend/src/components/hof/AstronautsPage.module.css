@@ -59,6 +59,10 @@ div {
   color: #af75ff;
 }
 
+.astronautTitleContainer {
+  display: none;
+}
+
 @media (max-width: 576px) {
   .astronautsAndSearchContainer {
     width: 100%;
@@ -70,5 +74,17 @@ div {
 
   .searchBar {
     margin-bottom: 20px;
+  }
+
+  .astronautsTitle {
+    color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 6vw;
+    margin: 10px 0 0 0;
+  }
+
+  .astronautTitleContainer {
+    display: block;
   }
 }

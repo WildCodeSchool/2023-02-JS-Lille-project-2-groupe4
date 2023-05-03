@@ -8,6 +8,15 @@
   min-width: 100%;
 }
 
+.buttonsAndSpacecraftsContainer {
+  display: flex;
+  align-items: center;
+}
+
+.spacecraftTitleContainer {
+  display: none;
+}
+
 .containerCard {
   display: flex;
   align-items: center;
@@ -41,9 +50,22 @@
   }
   .containerSpacecraft {
     justify-content: space-between;
+    flex-direction: column;
   }
 
   .containerCard {
     height: 100%;
+  }
+
+  .spacecraftTitleContainer {
+    display: block;
+  }
+
+  .nextLaunchTitle {
+    color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 6vw;
+    margin: 10px 0;
   }
 }
