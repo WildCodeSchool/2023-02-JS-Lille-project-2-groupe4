@@ -5,7 +5,7 @@ import styles from "./SpaceCraftContainer.module.css";
 import SpacecraftCard from "./spacecraft-card/SpacecraftCard";
 
 export default function SpaceCraftContainer() {
-  const url = `https://ll.thespacedevs.com/2.2.0/spacecraft/`;
+  const url = `https://ll.thespacedevs.com/2.2.0/spacecraft/?limit=20`;
 
   const [newSpacecraft, setNewSpacecraft] = useState(0);
   const [spacecraftData, setSpacecraftData] = useState({});
@@ -17,7 +17,9 @@ export default function SpaceCraftContainer() {
         },
       })
       .then((response) => {
-        setSpacecraftData(response.data.results);
+        setSpacecraftData(
+          response.data.results.sort(() => Math.random() - 0.5)
+        );
       });
   }, []);
 
