@@ -26,23 +26,27 @@ function MapAgencies() {
   return (
     <div className="mapContainer">
       <h1 className="agencieTitle">LAUNCH PADS</h1>
-      <div className="launchCounterContainer">
-        <h2 className="counterTitle">Min. launch count :</h2>
-        <Box width={300}>
-          <Slider
-            defaultValue={500}
-            aria-label="Default"
-            valueLabelDisplay="auto"
-            max={1000}
-            step={50}
-            sx={{
-              width: 300,
-              color: "#8338ec",
-              opacity: "0.6",
-            }}
-            onChange={(e) => setMinLaunchCount(e.target.value)}
-          />
-        </Box>
+      <div className="counterAndNameContainer">
+        <div className="launchCounterContainer">
+          <h2 className="counterTitle">-</h2>
+          <Box width={300}>
+            <Slider
+              defaultValue={500}
+              aria-label="Default"
+              valueLabelDisplay="auto"
+              max={1000}
+              step={50}
+              sx={{
+                width: 300,
+                color: "#8338ec",
+                opacity: "0.6",
+              }}
+              onChange={(e) => setMinLaunchCount(e.target.value)}
+            />
+          </Box>
+          <h2 className="counterTitle">+</h2>
+        </div>
+        <p className="minLaunchCountName">Sort by minimum launches count</p>
       </div>
 
       <MapContainer

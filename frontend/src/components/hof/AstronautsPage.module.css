@@ -54,9 +54,13 @@ div {
 
 .seeMore {
   padding: 15px;
-  font-weight: 100;
+  font-weight: 200;
   font-size: 14px;
   color: #af75ff;
+}
+
+.astronautTitleContainer {
+  display: none;
 }
 
 @media (max-width: 576px) {
@@ -70,5 +74,17 @@ div {
 
   .searchBar {
     margin-bottom: 20px;
+  }
+
+  .astronautsTitle {
+    color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 6vw;
+    margin: 10px 0 0 0;
+  }
+
+  .astronautTitleContainer {
+    display: block;
   }
 }

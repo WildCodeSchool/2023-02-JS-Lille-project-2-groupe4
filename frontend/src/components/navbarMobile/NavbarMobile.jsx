@@ -71,7 +71,14 @@ export default function MenuComponent() {
       <main id="page-wrap">
         <div className="navbar">
           <div className="logoContainer">
-            <img className="logoImage" src={logo} alt="" />
+            <Link
+              id="home"
+              className="logoContainer"
+              to="/"
+              onClick={() => closeMenu()}
+            >
+              <img className="logoImage" src={logo} alt="" />
+            </Link>
           </div>
         </div>
       </main>

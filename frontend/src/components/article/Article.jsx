@@ -4,20 +4,21 @@ import ArticleCard from "../articleCard/ArticleCard";
 import styles from "./Article.module.css";
 
 function Article() {
-  const [newArticle, setNewArticle] = useState({});
+  const [newArticle, setNewArticle] = useState();
 
   useEffect(() => {
     axios
-      .get("https://api.spaceflightnewsapi.net/v4/articles/")
+      .get("https://api.spaceflightnewsapi.net/v3/articles")
       .then((response) => setNewArticle(response.data));
   }, []);
 
   return (
     <div className={styles.articlesContainer}>
-      <h2 className={styles.newsTitle}>Last News</h2>
+      <h2 className={styles.newsTitle}>LAST NEWS</h2>
       <div className={styles.scrollContainer}>
-        {newArticle.results
-          ? newArticle.results.map(
+        {newArticle &&
+          newArticle
+            .map(
               (article, index) =>
                 index < 10 && (
                   <ArticleCard
@@ -28,7 +29,7 @@ function Article() {
                   />
                 )
             )
-          : null}
+            .sort(() => Math.random() - 0.5)}
       </div>
       <div className={styles.seeMore}>Scroll down to see more &#8595;</div>
     </div>

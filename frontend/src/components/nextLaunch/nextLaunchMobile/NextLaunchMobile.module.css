@@ -3,10 +3,30 @@
 .launchAndButtonsContainer {
   width: 90vw;
   display: flex;
+  flex-direction: column;
   align-items: center;
   border-radius: 15px;
   background-color: rgba(0, 0, 0, 0.535);
   margin-top: 100px;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nextLaunchTitle {
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 6vw;
+  margin: 10px 0;
+}
+
+.launchContainer {
+  display: flex;
+  align-items: center;
 }
 
 .nextLaunchMobileContainer {
@@ -20,7 +40,7 @@
 
 .launcherImageMobileContainer {
   max-width: 75vw;
-  height: 25vh;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,6 +51,7 @@
 
 .launcherMobileImage {
   width: 70%;
+  height: 100%;
   border-radius: 15px;
 }
 

@@ -45,7 +45,7 @@ const arrayOfUs = [
   },
 
   {
-    name: "🇬🇷 Alexandre Rohde Ferreira 🇬🇷",
+    name: "🇬🇷 Alexandre Ferreira 🇬🇷",
     title: '"Space Smog"',
     imgSrc: `${photoAlexandre}`,
     email: "a.rohde.ferreira@gmail.com",

@@ -54,6 +54,10 @@
 
 .title {
   margin: 0;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 2vw;
 }
 
 .citation {
@@ -124,5 +128,10 @@
 
   .middleMemoriamContainer {
     overflow-y: scroll;
+  }
+
+  .title {
+    font-size: 6vw;
+    font-weight: 200;
   }
 }

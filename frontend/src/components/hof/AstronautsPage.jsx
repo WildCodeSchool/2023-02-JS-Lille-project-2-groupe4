@@ -41,6 +41,10 @@ function HallFame() {
 
   return (
     <div className={styles.astronautsAndSearchContainer}>
+      <div className={styles.astronautTitleContainer}>
+        <h2 className={styles.astronautsTitle}>ASTRONAUTS</h2>
+      </div>
+
       <div className={styles.searchContainer}>
         <input
           className={styles.searchBar}

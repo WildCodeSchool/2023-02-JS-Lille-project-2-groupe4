@@ -8,11 +8,22 @@
   min-width: 100%;
 }
 
+.buttonsAndSpacecraftsContainer {
+  display: flex;
+  align-items: center;
+  min-height: 100%;
+}
+
+.spacecraftTitleContainer {
+  display: none;
+}
+
 .containerCard {
   display: flex;
   align-items: center;
   justify-content: space-between;
   align-items: stretch;
+  min-height: 100%;
 }
 
 .leftContainer,
@@ -41,9 +52,22 @@
   }
   .containerSpacecraft {
     justify-content: space-between;
+    flex-direction: column;
   }
 
   .containerCard {
     height: 100%;
+  }
+
+  .spacecraftTitleContainer {
+    display: block;
+  }
+
+  .nextLaunchTitle {
+    color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 6vw;
+    margin: 10px 0;
   }
 }
