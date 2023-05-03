@@ -33,7 +33,7 @@ export default function InfosModal() {
           type="button"
           onClick={handleClickOpen}
         >
-          &#40;About us&#41;
+          About us
         </button>
 
         <BootstrapDialog
