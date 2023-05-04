@@ -27,7 +27,6 @@ function Footer() {
         >
           Wild Code School
         </a>
-        .
       </p>
 
       <p className={styles.iconContainer}>

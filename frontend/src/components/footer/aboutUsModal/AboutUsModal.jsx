@@ -55,6 +55,7 @@ export default function InfosModal() {
           }}
         >
           <BootstrapDialogTitle
+            className={styles.aboutUsContainer}
             id="customized-dialog-title"
             onClose={handleClose}
           >
