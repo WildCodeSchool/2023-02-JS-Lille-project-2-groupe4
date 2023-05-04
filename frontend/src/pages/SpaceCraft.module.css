@@ -35,7 +35,7 @@
   width: 30%;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 800px) {
   .containerRight {
     display: none;
   }
@@ -46,35 +46,5 @@
 
   .containerGlobal {
     justify-content: center;
-  }
-}
-
-@media only screen and (max-width: 760px) {
-  .rightContainer {
-    display: none;
-  }
-
-  .leftContainer {
-    width: 100%;
-  }
-
-  .containerGlobal {
-    margin-top: 100px;
-  }
-}
-
-.containerLeft {
-  width: 70%;
-  display: flex;
-}
-
-@media screen and (max-width: 576px) {
-  .containerGlobal {
-    width: 90vw;
-    height: auto;
-  }
-
-  .containerLeft {
-    width: 100%;
   }
 }

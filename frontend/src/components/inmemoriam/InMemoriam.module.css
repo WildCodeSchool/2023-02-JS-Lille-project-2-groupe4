@@ -1,5 +1,6 @@
 .inMemoContainer {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -83,41 +84,37 @@
 }
 
 .imageShip {
-  width: 20rem;
-  height: 15rem;
+  width: auto;
+  height: 20vh;
   border-radius: 16px;
-  margin-bottom: 20px;
+  margin: 2vh 0;
 }
 
 .date {
   display: flex;
   margin: 0;
+  font-size: 2vh;
   background-color: rgba(0, 0, 0, 0.404);
   border-radius: 20px;
   text-align: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 2vh;
   padding: 10px 20px;
 }
 
 .badgeMission {
-  max-height: 140px;
+  height: 15vh;
   width: auto;
-
   margin-bottom: 20px;
 }
 
 .nameOfShip {
-  margin: 1rem 0 1rem 0;
+  margin: 5vh 0;
   font-size: 2rem;
   color: whitesmoke;
 }
 
-@media (max-width: 576px) {
-  .imageShip {
-    width: 100%;
-  }
-
+@media (max-width: 800px) {
   .middleMemoriamContainer {
     flex-direction: column;
   }
@@ -126,12 +123,14 @@
     font-size: 20px;
   }
 
-  .middleMemoriamContainer {
-    overflow-y: scroll;
-  }
-
   .title {
     font-size: 6vw;
     font-weight: 200;
+    margin-top: 50vh;
+  }
+
+  .inMemoContainer {
+    overflow: hidden;
+    overflow-y: scroll;
   }
 }

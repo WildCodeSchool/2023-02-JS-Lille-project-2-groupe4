@@ -1,8 +1,7 @@
 .astroCard {
   background-color: rgba(0, 0, 0, 0.404);
-  width: 7rem;
-  height: 7rem;
-
+  width: 12vh;
+  height: 12vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,20 +22,20 @@
 }
 
 .profilePhoto {
-  width: 4rem;
-  height: 4rem;
+  width: 6vh;
+  height: 6vh;
   border-radius: 100%;
   margin-bottom: 10px;
 }
 
 .astroName {
-  font-size: 1rem;
+  font-size: 2vh;
   font-weight: 300;
   text-align: center;
   margin: 0;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 800px) {
   .profilePhoto {
     width: 2rem;
     height: 2rem;

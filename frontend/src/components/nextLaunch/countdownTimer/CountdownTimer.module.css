@@ -42,7 +42,7 @@
   font-weight: 100;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .countdownTimer {
     margin: 0;
     padding: 0;
@@ -52,23 +52,12 @@
   }
 
   .units {
-    font-size: 3vw;
+    font-size: 2vw;
   }
 
   .time,
   .twoNumbers {
-    font-size: 5vw;
+    font-size: 4vw;
     font-weight: 300;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 960px) {
-  .time,
-  .twoNumbers {
-    font-size: 32px;
-  }
-
-  .units {
-    font-size: 20px;
   }
 }

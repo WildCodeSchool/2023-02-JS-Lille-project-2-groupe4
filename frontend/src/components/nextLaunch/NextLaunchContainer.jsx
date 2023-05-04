@@ -116,7 +116,7 @@ function NextLaunchContainer() {
             className={styles.button}
             onClick={() => nextLaunch()}
           />
-        </div>{" "}
+        </div>
       </div>
     </div>
   );

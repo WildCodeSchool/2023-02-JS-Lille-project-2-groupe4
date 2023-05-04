@@ -32,7 +32,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 800px) {
   .articlesContainer {
     width: 90vw;
     height: 75vh;
