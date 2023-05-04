@@ -16,6 +16,7 @@
   display: flex;
   flex-direction: row;
   align-items: stretch;
+  align-content: stretch;
   justify-content: space-between;
   gap: 5vw;
   width: 90vw;
@@ -32,7 +33,7 @@
   width: 30%;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 800px) {
   .articlesContainer {
     display: none;
   }
@@ -40,18 +41,11 @@
   .inmemoriamContainer {
     width: 100%;
     border-radius: 15px;
-    overflow: hidden;
-    overflow-y: scroll;
   }
 
   .inmemoriamAndArticlesContainer {
     min-height: 80vh;
-    overflow-y: auto;
     margin-top: 5rem;
     height: 80vh;
-  }
-
-  .memoriamPage {
-    min-height: 80vh;
   }
 }

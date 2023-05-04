@@ -68,7 +68,7 @@
   font-size: smaller;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 800px) {
   .abUsContainerbloc {
     border-radius: 15px;
     color: whitesmoke;
