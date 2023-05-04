@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+
+.memoriamPage {
+  background-image: url("../assets/inmemobg.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inmemoriamAndArticlesContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  align-content: stretch;
+  justify-content: space-between;
+  gap: 5vw;
+  width: 90vw;
+  height: 65vh;
+  margin: 0;
+  margin-top: 17vh;
+}
+
+.inmemoriamContainer {
+  width: 70%;
+}
+
+.articlesContainer {
+  width: 30%;
+}
+
+@media (max-width: 800px) {
+  .articlesContainer {
+    display: none;
+  }
+
+  .inmemoriamContainer {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .inmemoriamAndArticlesContainer {
+    min-height: 80vh;
+    margin-top: 5rem;
+    height: 80vh;
+  }
+}

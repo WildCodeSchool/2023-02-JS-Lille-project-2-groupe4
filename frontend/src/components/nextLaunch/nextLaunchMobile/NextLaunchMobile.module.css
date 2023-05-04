@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+
+.launchAndButtonsContainer {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.535);
+  margin-top: 100px;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nextLaunchTitle {
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 5vw;
+  margin: 10px 0;
+}
+
+.launchContainer {
+  display: flex;
+  align-items: center;
+}
+
+.nextLaunchMobileContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.launcherImageMobileContainer {
+  max-width: 75vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  margin-top: 15px;
+  margin-bottom: 3vh;
+}
+
+.launcherMobileImage {
+  width: 70%;
+  max-height: 35vh;
+  border-radius: 15px;
+}
+
+.descriptionMobileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.missionMobileContainer,
+.rocketMobileContainer,
+.padMobileContainer,
+.providerMobileContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.titleMobileDescription {
+  margin: 0;
+  color: rgb(190, 180, 180);
+  font-weight: 100;
+  font-size: 3vw;
+}
+
+.missionMobileName {
+  margin: 0;
+  font-weight: 300;
+  font-size: 3vw;
+}
+
+.button {
+  font-size: 5vw;
+  color: rgba(190, 180, 180, 0.452);
+  cursor: pointer;
+}

@@ -1,0 +1,136 @@
+.inMemoContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.535);
+  border-radius: 15px;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.buttonsAndInfosContainer {
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+  justify-content: space-between;
+}
+
+.middleMemoriamContainer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.infosLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infosRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.astronautsContainer {
+  display: flex;
+  align-items: center;
+  align-content: stretch;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  margin: 0;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 2vw;
+}
+
+.citation {
+  margin: 0;
+  font-weight: 200;
+  font-style: italic;
+  text-align: center;
+}
+
+.rightButtonContainer,
+.leftButtonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+}
+
+.button {
+  font-size: 50px;
+  color: rgba(190, 180, 180, 0.452);
+  cursor: pointer;
+}
+
+.imageShip {
+  width: auto;
+  height: 20vh;
+  border-radius: 16px;
+  margin: 2vh 0;
+}
+
+.date {
+  display: flex;
+  margin: 0;
+  font-size: 2vh;
+  background-color: rgba(0, 0, 0, 0.404);
+  border-radius: 20px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 2vh;
+  padding: 10px 20px;
+}
+
+.badgeMission {
+  height: 15vh;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.nameOfShip {
+  margin: 5vh 0;
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+@media (max-width: 800px) {
+  .middleMemoriamContainer {
+    flex-direction: column;
+  }
+
+  .nameOfShip {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 6vw;
+    font-weight: 200;
+    margin-top: 50vh;
+  }
+
+  .inMemoContainer {
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+}

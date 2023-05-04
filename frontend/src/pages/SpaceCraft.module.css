@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+
+.spacecraftPage {
+  background-image: url(../assets/background-space.png);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerGlobal {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 5vw;
+  width: 90vw;
+  height: 65vh;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0;
+  margin-top: 17vh;
+}
+
+.containerLeft {
+  width: 70%;
+  display: flex;
+  height: 100%;
+}
+
+.containerRight {
+  width: 30%;
+}
+
+@media only screen and (max-width: 800px) {
+  .containerRight {
+    display: none;
+  }
+
+  .containerLeft {
+    width: 90vw;
+  }
+
+  .containerGlobal {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+
+div {
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.astronautsAndSearchContainer {
+  width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.404);
+  border-radius: 15px;
+}
+
+.searchContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.astronautsContainer {
+  width: 100%;
+  max-height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* SearchBar css */
+.searchBar {
+  all: unset;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.404);
+  width: 30vh;
+  text-decoration-color: none;
+  font-weight: 300;
+  color: whitesmoke;
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  height: 3vh;
+  border: 0.01rem solid #b5aac2;
+  margin: 20px 0 0 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.seeMore {
+  padding: 15px;
+  font-weight: 200;
+  font-size: 14px;
+  color: #af75ff;
+}
+
+.astronautTitleContainer {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .astronautsAndSearchContainer {
+    width: 100%;
+  }
+
+  .astronautsContainer {
+    margin: 0;
+  }
+
+  .searchBar {
+    margin-bottom: 20px;
+  }
+
+  .astronautsTitle {
+    color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 6vw;
+    margin: 10px 0 0 0;
+  }
+
+  .astronautTitleContainer {
+    display: block;
+  }
+}

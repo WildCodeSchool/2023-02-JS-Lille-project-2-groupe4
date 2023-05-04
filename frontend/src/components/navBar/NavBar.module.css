@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+
+.navBarContainer {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 10vh;
+  background-color: transparent;
+  position: fixed;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heliusLogo {
+  width: 105px;
+  height: 75px;
+  padding: 20px 0 0 15px;
+}
+
+.navListsContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8vw;
+  margin-top: 72px;
+  padding: 0;
+}
+
+.navText {
+  font-size: 1.5vw;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+}
+
+.navbarLink:link,
+.navbarLink:visited {
+  text-decoration: none;
+  color: white;
+  transition: color 0.5s;
+}
+
+.navbarLink:hover {
+  cursor: pointer;
+  color: #9364d4;
+  transition: color 0.2s ease-out;
+}
+
+.navbarLink:hover {
+  cursor: pointer;
+  color: #9364d4;
+  transition: color 0.2s ease-out;
+}
+
+.navbarLink:active {
+  color: rgba(190, 180, 180, 0.452);
+}
+
+.menuActive {
+  text-decoration: none;
+  color: white;
+}
+
+.underline {
+  height: 3px;
+  background-color: transparent;
+  width: 0%;
+  transition: width 0.4s, background-color 0.5s;
+  margin: 10px auto 0 auto;
+  border-radius: 50px;
+}
+
+.menuActive .underline {
+  width: 100%;
+  background-color: white;
+}
+
+.navbarLink:hover .underline {
+  width: 100%;
+  background-color: white;
+}
+
+@media only screen and (min-width: 960px) {
+  .navBarContainer {
+    display: flex;
+  }
+}

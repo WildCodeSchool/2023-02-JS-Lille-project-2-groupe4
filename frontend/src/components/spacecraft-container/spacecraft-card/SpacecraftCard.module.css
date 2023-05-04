@@ -1,0 +1,64 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.imgContainer {
+  border-radius: 10px;
+  height: 25vh;
+  overflow: hidden;
+  display: flex;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.craftImage {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.bodyTitle {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inuseInfo {
+  background-color: rgb(66, 15, 114, 0.635);
+  border-radius: 15px;
+  padding: 1%;
+  width: 50%;
+  margin: 0;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.paragraphe {
+  margin: 0;
+  font-size: 1rem;
+  text-overflow: ellipsis;
+  margin-bottom: 0.2rem;
+}
+
+@media screen and (max-width: 576px) {
+  .imgContainer {
+    height: 20vh;
+  }
+
+  .inuseInfo {
+    width: 50%;
+  }
+
+  .paragraphe {
+    margin-bottom: 10px;
+  }
+}

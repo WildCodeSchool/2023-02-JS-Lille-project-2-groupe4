@@ -1,0 +1,73 @@
+.containerSpacecraft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.353);
+  min-width: 100%;
+}
+
+.buttonsAndSpacecraftsContainer {
+  display: flex;
+  align-items: center;
+  min-height: 100%;
+}
+
+.spacecraftTitleContainer {
+  display: none;
+}
+
+.containerCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: stretch;
+  min-height: 100%;
+}
+
+.leftContainer,
+.rightContainer {
+  width: 45%;
+  height: 100%;
+}
+
+.button {
+  font-size: 40px;
+  color: rgba(190, 180, 180, 0.452);
+  cursor: pointer;
+}
+
+.button:active {
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 800px) {
+  .rightContainer {
+    display: none;
+  }
+
+  .leftContainer {
+    width: 100%;
+  }
+  .containerSpacecraft {
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .containerCard {
+    height: 100%;
+  }
+
+  .spacecraftTitleContainer {
+    display: block;
+  }
+
+  .nextLaunchTitle {
+    color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 6vw;
+    margin: 10px 0;
+  }
+}
